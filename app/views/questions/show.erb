@@ -1,5 +1,6 @@
 <div id="content">
   <div id="question-header">
+    <h1><%= @question.title %></h1>
   </div>
   <div id="mainbar">
     <div class="question">
@@ -26,13 +27,16 @@
             </div>
             <table class="post-footer">
               <tbody>
+
                 <tr>
+
                   <td class="question-links">
                     <div class="post-menu">
                       <a href="/q/<%=@question.id%>/" title="short permalink to this question" class="short-link">share</a>
                       <a href-"/questions/<%=@question.id%>/edit" class="suggest-edit-post">improve this question</a>
                     </div>
                   </td>
+
                   <td class="question-owner-signature">
                     <div class="user-info">
                       <div class="question-datetime"><%= question.created_at %></div>
@@ -51,6 +55,20 @@
               </tbody>
             </table>
           </td>
+          <tr>
+            <td class="votecell"></td>
+            <td>
+              <div id="question/<%=@question.id%>/comments" class="comments">
+                <% @question.comments.each do |comment| %>
+                <tr>
+                  <span class="comment-body"><%= comment.body %></span> -
+                  <span class="comment-author"><a href="/users/<%=comment.user.id%>"><%= comment.user.username %></a></span>
+                  <span class="comment-datetime"><%= comment.created_at %></span>
+                </tr>
+                <% end %>
+              </div>
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
