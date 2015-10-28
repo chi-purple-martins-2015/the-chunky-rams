@@ -26,7 +26,16 @@
         <% end %>
       </div>
       <div class="user-info">
-        <%= question.user %>
+        <div class="question-datetime"><%= question.created_at %></div>
+        <div class="post-author"><%= question.user %></div>
+        <div class="post-author-details">
+          <a href="/users/<%=question.user.id%>"><%= question.user.username %></a>
+          <span class="reputation-score">4875</span>
+          <span class="silver-badge-icon"></span>
+          <span class="num-silver-badges">34</span>
+          <span class="gold-badge-icon"></span>
+          <span class="num-gold-badges">21</span>
+        </div>
       </div>
     </div>
     <% end %>
