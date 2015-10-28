@@ -11,7 +11,7 @@
               <span class="upvote-count"><%= @question.points %></span>
               <a class="downvote-arrow" title="Downvote this question">down vote</a>
               <a class="star" href="#" title="Favorite this question">favorite</a>
-              <div class="favorite count">
+              <div class="favorite-count">
               </div>
             </div>
           </td>
@@ -24,7 +24,11 @@
                 <a href="/questions/tagged/<%=tag.name%>" class="post-tag"><%= tag.name %></a>
               <% end %>
             </div>
-            
+            <table class="post-footer">
+              <tbody>
+
+              </tbody>
+            </table>
           </td>
         </tbody>
       </table>
