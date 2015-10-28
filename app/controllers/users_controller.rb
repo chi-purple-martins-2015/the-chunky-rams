@@ -7,7 +7,7 @@ end
 
 #retrieves register user view
 get "/users/signup" do
-
+  erb :"/users/signup"
 end
 
 #creates a new user
