@@ -27,16 +27,13 @@
             </div>
             <table class="post-footer">
               <tbody>
-
                 <tr>
-
                   <td class="question-links">
                     <div class="post-menu">
                       <a href="/q/<%=@question.id%>/" title="short permalink to this question" class="short-link">share</a>
                       <a href-"/questions/<%=@question.id%>/edit" class="suggest-edit-post">improve this question</a>
                     </div>
                   </td>
-
                   <td class="question-owner-signature">
                     <div class="user-info">
                       <div class="question-datetime"><%= @question.created_at %></div>
@@ -142,7 +139,59 @@
       <div class="new-login-form">
         <div class="new-login-left">
           <h3>Sign up or <a href="/users/login" id="login-link">log in</a></h3>
+          <div class="sign-up-using-google">
+            <p>
+              <span id="google-icon"></span>
+              <span>Sign up using Google</span>
+            </p>
+          </div>
+          <div class="sign-up-using-facebook">
+            <p>
+              <span id="facebook-icon"></span>
+              <span>Sign up using Facebook</span>
+            </p>
+          </div>
+          <div class="sign-up-using-email-password">
+            <p>
+              <span id="stack-exchange-icon"></span>
+              <span>Sign up using Email and Password</span>
+            </p>
+          </div>
+        </div>
+        <div class="new-login-right">
+          <h3>Post as a guest</h3>
+          <div class="form-item">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="guest-login">
+                    <div>
+                      <label for="display-name">Name</label>
+                      <input id="display-name" name="display-name" type="text" size="30" maxlength="30" tabindex="106">
+                    </div>
+                    <div>
+                      <label for="email-address">Email</label>
+                      <input id="email-address" name="email-address" type="email" size="30" maxlength="100" tabindex="106" placeholder="required, but never shown">
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
+      <div class="form-submit">
+        <input id="submit-button" type="submit" value="Post Your Answer" tabindex="110">
+      </div>
+      <p class="privacy-policy-agreement">
+        By posting your answer, you agree to the <a href="#">privacy policy</a> and <a href="#">terms of service</a>.
+      </p>
     </form>
-  </div>
+    <h2 class="bottom-notice">
+      Not the answer you're looking for? Browse other questions tagged
+      <% @question.tags.each do |tag| %>
+        <a href="/questions/tagged/<%=tag.name%>" class="post-tag"><%= tag.name %></a>
+      <% end %>
+      or <a href="/questions/new">ask your own question</a>.
+    </h2>
 </div>
