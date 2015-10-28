@@ -5,14 +5,15 @@ get "/users" do
 
 end
 
-#retrieves register user view
+#retrieves signup user view
 get "/users/signup" do
   erb :"/users/signup"
 end
 
 #creates a new user
 post "/users" do
-  @user = User.create(params)
+  @user = User.create!(email: params[:email], password: params[:password], username: params[:email])
+  puts @user
 end
 
 #retrieve a specific user
