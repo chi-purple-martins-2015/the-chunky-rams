@@ -6,6 +6,10 @@ class Question < ActiveRecord::Base
   has_many :comments, as: :commentable
   has_many :votes, as: :votable
 
+  def excerpt
+    self.body[0..200]
+  end
+
   def points
     self.votes.count
   end
