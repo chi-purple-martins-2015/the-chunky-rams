@@ -25,6 +25,7 @@ class User < ActiveRecord::Base
     if User.exists?(email: params[:email])
       @user = User.find_by(email: params[:email])
       @user.password == params[:password] ? @user : false
+      @user
     else
       false
     end

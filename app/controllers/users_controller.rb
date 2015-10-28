@@ -16,6 +16,16 @@ get "/users/login" do
   erb :"/users/session"
 end
 
+#logs a user in
+post "/users/login" do
+  @user = User.authenticate(params)
+  if @user
+    # send them somewhere
+  else
+    #tell them about their login error
+  end
+end
+
 #creates a new user
 post "/users" do
   @user = User.create!(email: params[:email], password: params[:password], username: params[:email])
