@@ -134,6 +134,15 @@
       </table>
       <% end %>
     </div>
-
+    <form id="new-answer" action="/questions/<%=@question.id%>/answers" method="post">
+      <h2>Your Answer</h2>
+      <div id="post-editor">
+        <textarea id="answer-input" cols="92" rows="15" tabindex="101"></textarea>
+      </div>
+      <div class="new-login-form">
+        <div class="new-login-left">
+          <h3>Sign up or <a href="/users/login" id="login-link">log in</a></h3>
+      </div>
+    </form>
   </div>
 </div>
