@@ -13,7 +13,6 @@ end
 #creates a new user
 post "/users" do
   @user = User.create!(email: params[:email], password: params[:password], username: params[:email])
-  puts @user
 end
 
 #retrieve a specific user
