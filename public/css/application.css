@@ -14,13 +14,65 @@ header {
 }
 
 .search_bar {
-  display: block;
+  float: right;
   width: 188px;
   max-height: 16px;
-  float: right;
   margin-top: 5px;
 }
-
 .navbar {
-  
+  margin-top: auto;
+  margin-bottom: auto;
+  float: right;
+  height: 34px;
+  width: 500px;
+}
+
+.navbar_li {
+  height: 100%;
+  width:50px;
+  float: right;
+  display: inline;
+  list-style: none;
+  color: white;
+  font-size: 12px;
+}
+
+.navbar_li_soc {
+  height: 100%;
+  width: 135px;
+  float: right;
+  display: inline;
+  list-style: none;
+  color: white;
+  font-size: 12px;
+}
+
+.navbar_li:hover {
+  background-color: #403E3E;
+  color: white;
+  height: 100%;
+  width:50px;
+  margin-bottom: 500px;
+}
+
+.navbar_li_soc:hover {
+  background-color: #403E3E;
+  color: white;
+  height: 100%;
+  width: 135px;
+}
+
+li.navbar_li a {
+  position: absolute;
+  padding-top: 10px;
+}
+
+li.navbar_li_soc a {
+  position: absolute;
+  padding-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
