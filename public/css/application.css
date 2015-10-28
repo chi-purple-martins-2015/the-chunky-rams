@@ -1,5 +1,26 @@
 header {
   height: 34px;
   width: 100%;
-  background-color: black;
+  background-color: #1F1E1E;
+}
+
+.top_bar {
+  display: block;
+  height: 34px;
+  width: 80%;
+  /*background-color: grey;*/
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.search_bar {
+  display: block;
+  width: 188px;
+  max-height: 16px;
+  float: right;
+  margin-top: 5px;
+}
+
+.navbar {
+  
 }

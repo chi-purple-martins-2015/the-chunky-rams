@@ -12,13 +12,33 @@
   -->
   <link rel="stylesheet" href="/css/application.css">
 
+  <!-- add font awesome icon stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
   <title></title>
 </head>
 <body>
-  <header></header>
+  <header>
+
+    <div class="top_bar">
+      <ul class="navbar">
+        <li>sign up</li>
+        <li>login</li>
+        <li>tour</li>
+        <li>help</li>
+        <li>stack overflow careers</li>
+      </ul>
+
+      <form>
+        <input type="text" name="searchbar" placeholder="search" class="search_bar">
+      </form>
+
+    </div>
+
+  </header>
   <%= yield %>
 </body>
 </html>
