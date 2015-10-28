@@ -8,7 +8,6 @@ header {
   display: block;
   height: 34px;
   width: 80%;
-  /*background-color: grey;*/
   margin-right: auto;
   margin-left: auto;
 }
@@ -20,28 +19,19 @@ header {
   margin-top: 5px;
 }
 .navbar {
-  margin-top: auto;
+  margin-top: 5px;
   margin-bottom: auto;
   float: right;
   height: 34px;
-  width: 500px;
+  margin-right: 35px;
 }
 
 .navbar_li {
   height: 100%;
-  width:50px;
-  float: right;
+  height: 50px;
   display: inline;
-  list-style: none;
-  color: white;
-  font-size: 12px;
-}
-
-.navbar_li_soc {
-  height: 100%;
-  width: 135px;
-  float: right;
-  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
   list-style: none;
   color: white;
   font-size: 12px;
@@ -51,26 +41,14 @@ header {
   background-color: #403E3E;
   color: white;
   height: 100%;
-  width:50px;
   margin-bottom: 500px;
 }
 
-.navbar_li_soc:hover {
-  background-color: #403E3E;
-  color: white;
-  height: 100%;
-  width: 135px;
-}
-
 li.navbar_li a {
-  position: absolute;
+  /*position: absolute;*/
   padding-top: 10px;
 }
 
-li.navbar_li_soc a {
-  position: absolute;
-  padding-top: 10px;
-}
 
 a {
   text-decoration: none;
