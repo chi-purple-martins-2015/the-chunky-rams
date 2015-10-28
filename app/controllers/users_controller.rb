@@ -7,7 +7,13 @@ end
 
 #retrieves signup user view
 get "/users/signup" do
-  erb :"/users/signup"
+  @signup = true
+  erb :"/users/session"
+end
+
+#retrieves login view
+get "/users/login" do
+  erb :"/users/session"
 end
 
 #creates a new user
@@ -30,10 +36,7 @@ delete "/users/:id" do
 
 end
 
-#retrieves login view
-get "/users/login" do
 
-end
 
 #logs a user in
 post "/users/login" do
