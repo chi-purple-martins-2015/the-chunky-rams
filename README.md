@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 > **Note**: This branch (master) contains a skeleton without any app code, perfect for creating a _new_ application or challenge. If you're looking for an example app built with this skeleton, take a look at the [example](/../..//tree/example) branch which includes basic CRUD and RSpec tests.
 
 ### Purpose
@@ -28,3 +29,9 @@ We would love for you to help make the skeleton more awesome, There are three wa
 3. Code review an open pull request!
 
 Be prepared to give and receive specific, actionable, and kind feedback!
+=======
+# the-chunky-rams
+Stack Overflow clone by The Chunky Rams
+
+The Chunky Rams are Josue, Katelyn, Kyle, Jen, and Troy.
+>>>>>>> b7ca2660d4fb24b0c6902470bfbc1801e6dca3b9
