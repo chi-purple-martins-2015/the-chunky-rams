@@ -27,10 +27,24 @@
             <table class="post-footer">
               <tbody>
                 <tr>
-                  <td>
+                  <td class="question-links">
                     <div class="post-menu">
                       <a href="/q/<%=@question.id%>/" title="short permalink to this question" class="short-link">share</a>
                       <a href-"/questions/<%=@question.id%>/edit" class="suggest-edit-post">improve this question</a>
+                    </div>
+                  </td>
+                  <td class="question-owner-signature">
+                    <div class="user-info">
+                      <div class="question-datetime"><%= question.created_at %></div>
+                      <div class="post-author"><%= question.user %></div>
+                      <div class="post-author-details">
+                        <a href="/users/<%=question.user.id%>"><%= question.user.username %></a>
+                        <span class="reputation-score">4875</span>
+                        <span class="silver-badge-icon"></span>
+                        <span class="num-silver-badges">34</span>
+                        <span class="gold-badge-icon"></span>
+                        <span class="num-gold-badges">21</span>
+                      </div>
                     </div>
                   </td>
                 </tr>
