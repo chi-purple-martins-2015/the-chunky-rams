@@ -8,7 +8,13 @@
           <td class="votecell">
             <div class="vote">
               <a class="upvote-arrow" title="Upvote this question">up vote</a>
+              <span class="upvote-count"><%= @question.points %></span>
+              <a class="downvote-arrow" title="Downvote this question">down vote</a>
+              <a class="star" href="#" title="Favorite this question">favorite</a>
+              <div class="favorite count">
+              </div>
             </div>
+          </td>
         </tbody>
       </table>
     </div>
