@@ -20,20 +20,24 @@ end
 post "/users/login" do
   @user = User.authenticate(params)
   if @user
-    # send them somewhere
+    session[:id] = @user.id
+    redirect "/users/#{session[:id]}"
   else
-    #tell them about their login error
+    #TELL THEM ABOUT THEIR LOGIN ERROR
+    redirect "/users/login"
   end
 end
 
 #creates a new user
 post "/users" do
   @user = User.create!(email: params[:email], password: params[:password], username: params[:email])
+  #TELL THEM ABOUT THEIR REGISTRATION ERROR
+
 end
 
 #retrieve a specific user
 get "/users/:id" do
-
+  erb :"/users/profile"
 end
 
 #updates a specific user
@@ -43,13 +47,6 @@ end
 
 #destroys a specific user
 delete "/users/:id" do
-
-end
-
-
-
-#logs a user in
-post "/users/login" do
 
 end
 
