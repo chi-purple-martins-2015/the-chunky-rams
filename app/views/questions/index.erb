@@ -18,9 +18,24 @@
     <div class = "questions">
       <% @questions.each do |question| %>
       <div class = "question-summary">
-        <div class = "question-statscontainer">
 
-          PUT STATS HERE IN MORE DIVS</div>
+        <div class = "question-statscontainer">
+          <div class = "question-stats">
+            <div class = "question-num-votes">
+              <div class = "question-vote-num"><%= question.score %><div>
+              <div class = "question-vote-label">votes<div>
+            </div>
+            <div class = "question-num-answers">
+              <div class = "question-answers-num"><%= question.num_answers %><div>
+              <div class = "question-answers-label">answers<div>
+            </div>
+          </div>
+
+          <div class = "question-views">
+            <%= question.views %> views
+          </div>
+
+        </div>
 
         <div class = "question-container">
           <div id = "question-title"><a href="/questions/<%=question.id%>"><%= question.title %></a></div>
