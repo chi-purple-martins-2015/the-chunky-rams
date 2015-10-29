@@ -13,6 +13,9 @@
 
   <div class="question-body">
     <p><%= @question.body %></p>
+    <div class="post-user-info">
+      <span class="post-username"><a href="/users/<%=@question.user_id%>"><%= find_username(@question.user_id) %></a></span>
+    </div>
   </div>
 
   <div class="question-comments">
@@ -38,6 +41,9 @@
     </div>
     <div class="individual-answer">
       <p><%= answer.body %></p>
+      <div class="post-user-info">
+        <span class="post-username"><a href="/users/<%=answer.user_id%>"><%= find_username(answer.user_id) %></a></span>
+      </div>
     </div>
   </div>
 
