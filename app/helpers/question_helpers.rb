@@ -4,6 +4,6 @@ helpers do
   end
 
   def format_time(timestamp)
-    timestamp.strftime('%B %e, %Y')
+    timestamp.strftime('%B %e, %Y at %I:%M')
   end
 end
