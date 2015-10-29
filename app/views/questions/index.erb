@@ -30,21 +30,44 @@
               <div class = "question-answers-label">answers<div>
             </div>
           </div>
-
           <div class = "question-views">
             <%= question.views %> views
           </div>
-
         </div>
 
         <div class = "question-container">
           <div id = "question-title"><a href="/questions/<%=question.id%>"><%= question.title %></a></div>
           <div class = "question-excerpt"> <%= question.excerpt %> </div>
+
+          <div class = "question-tags">
+          <% if question.has_tags? %>
+            <% question.tags.each do |tag| %>
+                <a href="/questions/tagged/<%=tag.name%>" class="post-tag"><%= tag.name %></a>
+            </div>
+            <% end %>
+          <% end %>
+
+          <div class = "question-date-author-wrapper">
+            <div class = "question-user-info">
+              <div class = "question-time">asked <%= format_time(question.created_at) %></div>
+              <div class = "question-username"><%= find_username(question.user_id) %></div>
+              <div class = "question-user-pic"> <img alt = "user picture" src = "#"/></div>
+              <span class="reputation-score"><%= rand(10..4500)%></span>
+          <span class="gold-badge-icon"></span>
+          <span class="num-badges"><%=rand(1..100)%></span>
+          <span class="silver-badge-icon"></span>
+          <span class="num-badges"><%=rand(1..100)%></span>
+          <span class="bronze-badge-icon"></span>
+          <span class="num-badges"><%=rand(1..100)%></span>
+            </div>
+          </div>
+
         </div>
+
       </div>
       <% end %>
     </div>
-<!-- below tab closeds questions mainbar. don't delete it. -->
+<!-- below tab closes questions mainbar. don't delete it. -->
     </div>
 
 
