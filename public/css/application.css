@@ -360,6 +360,7 @@ span > img:hover {
   margin-right: auto;
   margin-left: auto;
   margin-top: 90px;
+  margin-bottom: 100px;
   font-family: sans-serif;
   -webkit-box-sizing: border-box;
   -mox-box-sizing: border-box;
@@ -410,7 +411,7 @@ span > img:hover {
 #signup-login {
 
   width: 1000px;
-  height: 512px;
+  height: 800px;
 }
 
 #ram-network-text {
@@ -418,23 +419,30 @@ span > img:hover {
   width: 1000px;
   height: 36px;
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+#mini-ram-logo {
+  margin-left: 2px;
+  margin-bottom: -6px;
 }
 
 #signup-login-wrapper {
 
   width: 300px;
+  height: 450px;
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 50px;
   border: 1px solid #E6E6E6;
-  margin-top: 20px;
-  margin-bottom:20px;
-  margin-right: 329px;
-  margin-left: 329px;
+  margin: 0 auto;
 }
 
+#terms-of-service {
+  margin-top: -35px;
+  margin-bottom: 20px;
+}
 
 #google-fb-buttons {
 
@@ -449,13 +457,15 @@ span > img:hover {
   float: left;
   width: 136px;
   height: 38px;
+  padding: 1px;
+  margin-top: 5px;
   border: 1px solid #E6E6E6;
   background-color: #E0492F;
   color: #FFFFFF;
 }
 
 .google-button > span {
-
+  margin: 0 auto;
   background-color: #E0492F;
 }
 
@@ -466,13 +476,14 @@ span > img:hover {
   float: right;
   width: 136px;
   height: 38px;
+  padding: 1px;
+  margin-top: 5px;
   border: 1px solid #E6E6E6;
   background-color: #395697;
   color: #FFFFFF;
 }
 
 .facebook-button > span {
-
   background-color: #395697;
 }
 
@@ -482,22 +493,15 @@ span > img:hover {
   width: 600px;
 }
 
-#or-seperator {
+#or {
 
   width: 280px;
   height: 17px;
+  margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  text-align: center;
-}
-
-#or {
-
-  width: 13.016px;
-  height: 16px;
+  border-bottom: 1px solid #E6E6E6;
   padding: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   color: #808080;
 }
 
@@ -526,7 +530,7 @@ span > img:hover {
   border-radius: 5px;
   width: 136px;
   height: 38px;
-  padding: 12px 50px;
+  padding: 2px;
   margin-top: 5px;
   background-color: #0077CC;
   color: white;
@@ -535,22 +539,67 @@ span > img:hover {
 #switch-to-signup, #switch-to-login {
 
   width: 300px;
-  height: 19px;
   padding: 20px;
   border: 1px solid #E6E6E6;
+  margin: 0 auto;
   margin-top: 20px;
-  margin-bottom:100px;
-  margin-left: 329px;
-  margin-right: 329px;
 
 }
 
 #controls-row {
-
   float: left;
+  width: 300px;
+  margin-top: 40px;
+}
+
+.logout-specific-view {
+  display: inline-block;
+  margin: 0 25%;
+}
+
+.logout-specific-view ul {
   width: 300px;
 }
 
+.logout-specific-view li {
+  list-style-type: none;
+}
+
+.logout-specific-view p {
+  font-size: 20px;
+}
+
+#logout-tab {
+  border: none;
+  font-size: 20px;
+}
+
+#logout-tab a {
+  font-size: 20px;
+}
+
+#logout-form {
+  border: 1px solid #E6E6E6;
+  width: 400px;
+  height: 250px;
+  margin: 0 auto;
+  padding: 3em;
+}
+
+
+.logout-button {
+
+  display: inline-block;
+  border-radius: 5px;
+  width: 136px;
+  height: 38px;
+  padding: 1px 5px;
+  margin-top: 5px;
+    margin-left: 50px;
+
+  background-color: #0077CC;
+  color: white;
+}
 /*Users profile nave */
 
 /* **** QUESTIONS INDEX START **** */
