@@ -21,8 +21,8 @@
         <%= question.excerpt %>
       </div>
       <div class="tags">
-        <% if has_tags?(@question) %>
-          <% @question.tags.each do |tag| %>
+        <% if question.has_tags? %>
+          <% question.tags.each do |tag| %>
             <a href="/questions/tagged/<%=tag.name%>" class="post-tag"><%= tag.name %></a>
           <% end %>
         <% end %>
