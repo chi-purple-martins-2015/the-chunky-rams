@@ -39,7 +39,7 @@
                       <div class="question-datetime"><%= @question.created_at %></div>
                       <div class="post-author"><%= @question.user %></div>
                       <div class="post-author-details">
-                        <a href="/users/<%=@question.user.id%>"><%= @question.user.username %></a>
+                        <a href="/users/<%=@question_author.id%>"><%= @question_author.username %></a>
                         <span class="reputation-score">4875</span>
                         <span class="silver-badge-icon"></span>
                         <span class="num-silver-badges">34</span>
@@ -59,7 +59,7 @@
                 <% @question.comments.each do |comment| %>
                 <tr>
                   <span class="comment-body"><%= comment.body %></span> -
-                  <span class="comment-author"><a href="/users/<%=comment.user.id%>"><%= comment.user.username %></a></span>
+                  <span class="comment-author"><a href="/users/<%=comment.user_id%>"><%= find_username(comment.user_id) %></a></span>
                   <span class="comment-datetime"><%= comment.created_at %></span>
                 </tr>
                 <% end %>
@@ -100,7 +100,7 @@
                       <div class="question-datetime"><%= answer.created_at %></div>
                       <div class="post-author"><%= answer.user %></div>
                       <div class="post-author-details">
-                        <a href="/users/<%=answer.user.id%>"><%= answer.user.username %></a>
+                        <a href="/users/<%=answer.user_id%>"><%= find_username(answer.user_id) %></a>
                         <span class="reputation-score">4875</span>
                         <span class="silver-badge-icon"></span>
                         <span class="num-silver-badges">34</span>
@@ -120,7 +120,7 @@
                 <% answer.comments.each do |comment| %>
                 <tr>
                   <span class="comment-body"><%= comment.body %></span> -
-                  <span class="comment-author"><a href="/users/<%=comment.user.id%>"><%= comment.user.username %></a></span>
+                  <span class="comment-author"><a href="/users/<%=comment.user_id%>"><%= find_username(comment.user_id) %></a></span>
                   <span class="comment-datetime"><%= comment.created_at %></span>
                 </tr>
                 <% end %>
