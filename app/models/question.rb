@@ -11,7 +11,7 @@ class Question < ActiveRecord::Base
   end
 
   def points
-    self.votes.count
+    # self.votes.
   end
 
   def num_answers
