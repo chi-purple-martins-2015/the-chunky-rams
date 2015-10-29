@@ -1,7 +1,70 @@
 
-<div class="user-top-nav">
-    <ul class="user-tabs">
-        <li class="active"><a href="/tags/new">Profile</a></li>
-        <li><a href="/tags/name">Activity</a></li>
-    </ul>
+<div class="user-page-container">
+
+  <div class="user-top-nav">
+      <ul class="user-tabs">
+          <li class="active"><a href="/tags/new">Profile</a></li>
+          <li><a href="/tags/name">Activity</a></li>
+      </ul>
+
+    <div class="user-image-div">
+      <img src="<%=@user.path_to_profile_image%>">
+
+      <div class="reputation">
+        <span id="rep-number"><%=rand(100..200000).to_s.chars.to_a.reverse.each_slice(3).map(&:join).join(",").reverse%></span>
+        <span id="rep">REPUTATION</span>
+      </div>
+
+      <div class="user-stats-1">
+        <p><%=rand(1..500)%></p>
+      </div>
+
+      <div class="user-stats-2">
+        <p><%=rand(1..500)%></p>
+      </div>
+
+      <div class="user-stats-3">
+        <p><%=rand(1..500)%></p>
+      </div>
+    </div>
+    <div class="user-info-div">
+      <div class="profile-center-nav">
+        <h2><%=@user.username %>&nbsp; <div class="user-per">top 0.01% overall</div></h2>
+        <p class="user-info-title">
+          Web Application Specialist at ZEEF
+        </p>
+        <p class="user-info-p">
+          Deaf webapp specialist, lived on Curaçao, currently working for Kizitos, creating ZEEF, and maintaining JSF utility library OmniFaces
+        </p>
+        <p>
+          Want to get started with JSF the right way? Here's a curated overview of handpicked answers on the subject JSF.
+        </p>
+        <p>
+          You can hire me via J-Development. You can donate me at PayPal.
+        </p>
+      </div>
+      <div class="profile-right-nav">
+        <div>
+          <h2><%=@user.questions.count %></h2>
+          <p>Quesions</p>
+        </div>
+
+        <div>
+          <h2><%=@user.answers.count %></h2>
+          <p>Answers</p>
+        </div>
+
+        <div>
+          <h2><%=@user.answers.count %></h2>
+          <p>People reached</p>
+        </div>
+        <p class="user-nav-links"> Amsterdam, Netherlands</p>
+        <p class="user-nav-links">OmniFaces</p>
+        <p class="user-nav-links"> BalusC</p>
+        <p class="user-nav-links"> balusc.zeef.com</p>
+      </div>
+    </div>
+  </div>
+
+
 </div>
