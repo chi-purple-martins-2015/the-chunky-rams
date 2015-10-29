@@ -1,3 +1,5 @@
+enable :sessions
+
 helpers do
 
   def set_session_variables(user)
