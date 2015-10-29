@@ -12,15 +12,15 @@ end
 post "/users" do
   @user = User.create!(email: params[:email], password: params[:password], username: params[:email])
   #TELL THEM ABOUT THEIR REGISTRATION ERROR
+  redirect "/users/login"
 end
 
 get "/users/login" do
+  @login = true
   erb :"/users/session"
 end
 
 post "/users/login" do
-  puts "STUFFF!"
-  p params
   @user = User.authenticate(params[:email], params[:password])
   if @user
     set_session_variables(@user)
@@ -32,15 +32,15 @@ post "/users/login" do
 end
 
 get "/users/logout" do
+  @logout = true
   erb :"users/session"
 end
 
 post "/users/logout" do
   clear_session_variables
-  erb :index
+  redirect "/"
 end
 
-#retrieve a specific user
 get "/users/:id" do
   @user = User.find_by(id: params[:id])
   erb :"/users/profile"
@@ -51,7 +51,6 @@ put "/users/:id" do
   #do we need this? only if user will have profile edit functionality
 end
 
-#destroys a specific user
 delete "/users/:id" do
   @user = User.find(params[:id])
   @user.destroy

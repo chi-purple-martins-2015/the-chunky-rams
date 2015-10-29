@@ -2,20 +2,18 @@
 header {
   height: 34px;
   width: 100%;
-  background-color: #1F1E1E;
+  background-color: #222;
 }
 
 body {
-  height: 2000px;
 }
 
 footer {
   position: relative;
   bottom: 0;
-  top: 1140em;
   height: 200px;
   width: 100%;
-  background-color: #1F1E1E;
+  background-color: #2f2f2f;
 }
 
 .top_bar {
@@ -43,18 +41,20 @@ footer {
 .top_navbar_li {
   height: 50px;
   display: inline;
-  margin-left: 10px;
-  margin-right: 10px;
   list-style: none;
   color: white;
   font-size: 12px;
+  padding: 12px;
 }
 
-.navbar_li a:hover {
-  /*position: absolute;*/
-  height: 55px;
-  background-color: gray;
-  height: 45;
+.top_navbar_li:hover {
+  height: 50px;
+  display: inline;
+  list-style: none;
+  color: white;
+  font-size: 12px;
+  padding: 12px;
+  background: #333333;
 }
 
 .logo_bar {
@@ -73,7 +73,7 @@ footer {
 .logo_navbar {
   height: 50px;
   position: absolute;
-  right: 30px;
+  right: 130px;
   display: inline;
   margin-left: 10px;
   margin-right: 10px;
@@ -142,7 +142,7 @@ footer {
 #logo_navbar_question:hover {
   height: 24px;
   width: 90px;
-  background-color: orange;
+  background-color: #DD9E10;
   float: right;
   margin-left: 3px;
   margin-right: 3px;
@@ -155,7 +155,7 @@ footer {
 #logo_navbar_tag:hover {
   height: 24px;
   width: 60px;
-  background-color: orange;
+  background-color: #DD9E10;
   float: right;
   margin-left: 3px;
   margin-right: 3px;
@@ -167,7 +167,7 @@ footer {
 #logo_navbar_user:hover {
   height: 24px;
   width: 65px;
-  background-color: orange;
+  background-color: #DD9E10;
   float: right;
   margin-left: 3px;
   margin-right: 3px;
@@ -179,7 +179,7 @@ footer {
 #logo_navbar_unanswered:hover {
   height: 24px;
   width: 110px;
-  background-color: orange;
+  background-color: #DD9E10;
   float: right;
   margin-left: 3px;
   margin-right: 3px;
@@ -191,7 +191,7 @@ footer {
 #logo_navbar_ask:hover {
   height: 24px;
   width: 120px;
-  background-color: orange;
+  background-color: #DD9E10;
   float: right;
   margin-left: 3px;
   margin-right: 3px;
@@ -200,45 +200,56 @@ footer {
   transition: 0.2s;
 }
 
-a {
+header a {
   text-decoration: none;
   color: white;
   height: 100%;
 }
 
-span {
+header span {
+  /*position: absolute;
+  top: 7px;
   color: white;
   font-weight: bold;
   letter-spacing: 1px;
-  margin-left: 55px;
+  margin-left: 55px;*/
 
+}
+
+span > img {
+  width: 12%;
+  height: auto;
+  margin-left: 60px;
+  margin-top: 3px;
+}
+
+
+span > img:hover {
+  width: 13%;
+  height: auto;
+  margin-left: 60px;
+  background: #333333;
+  /*padding-bottom: 5px;*/
+  /*padding-right: 5px;*/
 }
 
 
 
-
-
-
-
-
-
-
-
+/*TAGS CSS SECTION*/
 
 .tag-container {
   max-width: 900px;
   margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
-  height: 900px;
 }
 
 .tabs {
-    float: right;
-    border-bottom: 1px solid #ccc;
-    width: 94%;
-    margin-bottom: 16px;
-    list-style: none;
+  float: right;
+  border-bottom: 1px solid #ccc;
+  width: 94%;
+  margin-bottom: 16px;
+  list-style: none;
 }
 
 .tabs li {
@@ -274,8 +285,8 @@ span {
 
 .tag-filter {
 
-box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
-
+  /*box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;*/
+  height: 25px;
 }
 
 .tag-name {
@@ -292,9 +303,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 .tag-description {
 
     max-width: 190px;
-
     font-family: Arial,Liberation Sans,DejaVu Sans,sans-serif;
-
     font-size: 12px;
     color: #888;
 }
@@ -327,7 +336,8 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
     margin: 0;
     clear: both;
 
-    /*font-size: 14px;*/
+    font-size: 14px;
+
     margin: 10px 0;
     line-height: 18px;
 }
@@ -336,37 +346,35 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 .question-count {
 
     max-width: 190px;
-        font-family: Arial,Liberation Sans,DejaVu Sans,sans-serif;
+    font-family: Arial,Liberation Sans,DejaVu Sans,sans-serif;
     font-size: 12px;
     color: black;
-  }
 
-/** {
+}
+
+/*LOGIN, LOGOUT AND SIGNUP PAGE*/
+
+.login-signup-container {
+
   background-color: #FFFFFF;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 90px;
+  font-family: sans-serif;
   -webkit-box-sizing: border-box;
   -mox-box-sizing: border-box;
   box-sizing: border-box;
-
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-}*/
-
-/*LOGIN AND SIGNUP PAGE*/
-
-.login-signup-container {
-  background-color: #FFFFFF;
-  font-family: sans-serif;
-  -webkit-box-sizing: border-box;
-    -mox-box-sizing: border-box;
-      box-sizing: border-box;
-          font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 .login-signup-container a {
+
   color: #0077CD;
   text-decoration: none;
   }
 
 #signup-login-header {
+
   width: 1000px;
   height: 35px;
   margin: 0 auto;
@@ -376,16 +384,19 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 }
 
 #signup-login-header a {
+
   color: black;
   text-decoration: none;
   font-size: 13px
   }
 
 #signup-login-header-tabs {
+
   float: left;
 }
 
 .tab {
+
   width: 33.125px;
   height: 12px;
   padding: 10px;
@@ -397,11 +408,13 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 }
 
 #signup-login {
+
   width: 1000px;
   height: 512px;
 }
 
 #ram-network-text {
+
   width: 1000px;
   height: 36px;
   font-size: 20px;
@@ -409,6 +422,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 }
 
 #signup-login-wrapper {
+
   width: 300px;
   padding-top: 20px;
   padding-left: 20px;
@@ -423,11 +437,13 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 
 
 #google-fb-buttons {
+
   width: 280px;
   height: 55px;
 }
 
 .google-button {
+
   border-radius: 5px;
   display: inline-block;
   float: left;
@@ -439,10 +455,12 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 }
 
 .google-button > span {
+
   background-color: #E0492F;
 }
 
 .facebook-button {
+
   border-radius: 5px;
   display: inline-block;
   float: right;
@@ -454,15 +472,18 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 }
 
 .facebook-button > span {
+
   background-color: #395697;
 }
 
 #signup-login {
+
   margin: 0 auto;
   width: 600px;
 }
 
 #or-seperator {
+
   width: 280px;
   height: 17px;
   margin-top: 20px;
@@ -471,6 +492,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 }
 
 #or {
+
   width: 13.016px;
   height: 16px;
   padding: 10px;
@@ -479,13 +501,15 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
   color: #808080;
 }
 
-form > label {
+#signup-login-form > label {
+
   color: black;
   line-height: 1.3em;
   font-weight: bold;
 }
 
-input {
+#signup-login-form > input {
+
   width: 263px;
   height: 18px;
   padding: 8px;
@@ -496,6 +520,7 @@ input {
 }
 
 .signup-button, .login-button {
+
   display: block;
   float: right;
   border-radius: 5px;
@@ -508,6 +533,7 @@ input {
 }
 
 #switch-to-signup, #switch-to-login {
+
   width: 300px;
   height: 19px;
   padding: 20px;
@@ -520,12 +546,247 @@ input {
 }
 
 #controls-row {
+
   float: left;
   width: 300px;
 }
 
+/*Users profile nave */
+
+/* **** QUESTIONS INDEX START **** */
+
+.questions-container {
+  width: 1030px;
+  height: 4755px;
+  margin-top: 100px;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+    -mox-box-sizing: border-box;
+      box-sizing: border-box;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.questions-content {
+  width: 1000px;
+  height: 4629px;
+  padding: 15px;
+}
+
+.questions-mainbar {
+  display: inline-block;
+  float: left;
+  width: 728px;
+  height: 4629px;
+}
+
+.questions-mainbar-header {
+  display: inline-block;
+  float: left;
+  width: 728px;
+  height: 34px;
+  border-bottom: 1px;
+}
+
+#questions-mainbar-header-tabs {
+  float: right;
+}
+
+.questions-mainbar-header a {
+  color: black;
+  text-decoration: none;
+  font-size: 13px
+  }
+
+#all-questions {
+  width: 106px;
+  height: 23;
+}
+
+.questions {
+  width: 728px;
+  height: 4629px;
+  border-bottom: 20px;
+}
+
+.questions-sidebar {
+  background-color: blue;
+  display: inline-block;
+  float: right;
+  width: 220px;
+  height: 2450px;
+  margin-bottom: 15px;
+}
+
+.question-summary {
+  width: 728px;
+  height: 125.50px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.question-statscontainer {
+  width: 78px;
+  height: 115px;
+  display: inline-block;
+  float: left;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.question-stats {
+  width: 58px;
+  height: 87px;
+}
+
+.question-num-votes {
+  width: 58px;
+  height: 35px;
+  color: gray;
+}
+
+.question-num-answers {
+  width: 58px;
+  height: 32px;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+  background-color: #75845c;
+  color: white;
+}
+
+.question-vote-num {
+  width: 58px;
+  height: 16px;
+  padding-bottom: 3px;
+}
+
+.question-vote-label {
+  width: 58px;
+  height: 16px;
+}
+
+.question-views {
+  width: 58px;
+  height: 32px;
+  padding-top: 4px;
+  color: black;
+}
+
+.question-container {
+  width: 630px;
+  height: 125.50px;
+  display: inline-block;
+  border: 1px solid red;
+}
+
+#question-title {
+  width: 630px;
+  height: 120px;
+  margin-bottom: 7.50px;
+}
+
+#question-title > a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0077CD;
+  width: auto;
+  height: auto;
+  margin-bottom: 19.2px;
+  margin-left: 0;
+}
+
+.question-excerpt {
+  width: 630px;
+  height: 32px;
+  padding-bottom: 5px;
+  margin-top: -80px;
+  color: #444;
+}
+
+.question-tags > a {
+  width: auto;
+  height: 12px;
+  line-height: 18px;
+  display: inline-block;
+  float: left;
+  font-size: 12px;
+  padding-bottom: 4.8px 6px;
+  border: 1px;
+  margin-top: 1px;
+  margin-left: -1px;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  color: #3e6d8e;
+  background-color: #e4edf4;
+}
+
+.question-date-author-wrapper {
+  width: 185px;
+  height: 60px;
+  float: right;
+  color: #999;
+  line-height: 18px;
+}
+
+.question-user-info {
+  width: 190px;
+  height: 35px;
+  float: right;
+}
+
+.question-time {
+  width: 190px;
+  height: 18px;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.question-username {
+  color: blue;
+}
+
+.question-user-pic {
+  color: blue;
+}
+
+.reputation-score {
+  color: #777;
+  font-weight: normal;
+  margin-left: 1px;
+  margin-right: 2px;
+  font-size: 12px;
+}
+
+.gold-badge-icon {
+  padding: 1px;
+  background-color: gold;
+}
+
+.silver-badge-icon {
+  padding: 1px;
+  background-color: silver;
+}
+
+.bronze-badge-icon {
+  padding: 1px;
+  background-color: brown;
+}
+
+.num-badges {
+  font-weight: normal;
+  font-size: 12px;
+  margin: 0px;
+  padding-left: 2px;
+  color: #808185;
+}
+
+/* ---- QUESTIONS INDEX END ---- */
+
 
 /*Users prifile nave */
+
 
 .user-top-nav {
 
@@ -533,10 +794,12 @@ input {
   margin-left: auto;
   margin-right: auto;
   margin-top: 70px;
+
   height: 900px;
 }
 
 .user-tabs {
+
     float: left;
     border-bottom: 1px solid #ccc;
     width: 100%;
@@ -545,6 +808,7 @@ input {
 }
 
 .user-tabs li {
+
     float: left;
     padding: 10px 15px;
     height: 20px;
@@ -552,12 +816,14 @@ input {
 }
 
 .user-tabs li a {
+
     color: #666;
     /*font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; */
     text-decoration: none;
     font-size: 13px;
 }
 .user-tabs li.active {
+
     position: relative;
     left: -2.5em;
     border: 1px solid #ccc;
