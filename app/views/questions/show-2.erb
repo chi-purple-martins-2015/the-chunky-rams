@@ -1,0 +1,55 @@
+<div class="question-show-main">
+  <div class="question-header">
+    <h1><%= @question.title %></h1>
+  </div>
+
+  <div class="vote-div">
+    <div class="upvote-arrow" title="Upvote this question">^</div>
+    <div class="upvote-count"><%= @question.score %></div>
+    <div class="downvote-arrow" title="Downvote this question">v</div>
+    <div class="star" href="#" title="Favorite this question">*</div>
+    <div class="favorite-count"><%=rand(1..10)%></div>
+  </div>
+
+  <div class="question-body">
+    <p><%= @question.body %></p>
+  </div>
+
+  <div class="question-comments">
+    <% @question.comments.each do |comment| %>
+    <div class="individual-question-comment">
+      <span class="question-comment-body"><%= comment.body %> - </span>
+      <span class="question-comment-author"><a href="/users/<%=comment.user_id%>"><%= find_username(comment.user_id) %></a></span>
+      <span class="question-comment-created-at"><%= format_time(comment.created_at) %></span>
+    </div>
+    <% end %>
+  </div>
+
+  <div class="answers-header">
+    <h2><%= @answers.count %> Answers</h2>
+  </div>
+
+  <div class="question-answers">
+  <% @answers.each do |answer| %>
+    <div class="vote-div">
+      <div class="upvote-arrow" title="Upvote this answer">^</div>
+      <div class="upvote-count"><%= answer.score %></div>
+      <div class="downvote-arrow" title="Downvote this answer">v</div>
+    </div>
+    <div class="individual-answer">
+      <p><%= answer.body %></p>
+    </div>
+  </div>
+
+  <div class="answer-comments">
+    <% answer.comments.each do |comment| %>
+    <div class="individual-answer-comment">
+      <span class="answer-comment-body"><%= comment.body %> - </span>
+      <span class="answer-comment-author"><a href="/users/<%=comment.user_id%>"><%= find_username(comment.user_id) %></a></span>
+      <span class="answer-comment-created-at"><%= format_time(comment.created_at) %></span>
+    </div>
+    <% end %>
+  </div>
+  <% end %>
+
+</div>

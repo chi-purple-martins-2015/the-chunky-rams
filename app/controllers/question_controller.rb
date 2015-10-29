@@ -7,5 +7,5 @@ get "/questions/:id" do
   @question = Question.find_by(id: params[:id])
   @question_author = User.find_by(id: @question.user_id)
   @answers = @question.answers
-  erb :"questions/show"
+  erb :"questions/show-2"
 end
