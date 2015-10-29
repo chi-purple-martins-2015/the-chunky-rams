@@ -15,12 +15,11 @@ post "/users" do
 end
 
 get "/users/login" do
+  @login = true
   erb :"/users/session"
 end
 
 post "/users/login" do
-  puts "STUFFF!"
-  p params
   @user = User.authenticate(params[:email], params[:password])
   if @user
     set_session_variables(@user)
@@ -32,6 +31,7 @@ post "/users/login" do
 end
 
 get "/users/logout" do
+  @logout = true
   erb :"users/session"
 end
 
@@ -40,7 +40,6 @@ post "/users/logout" do
   erb :index
 end
 
-#retrieve a specific user
 get "/users/:id" do
   erb :"/users/profile"
 end
@@ -50,7 +49,6 @@ put "/users/:id" do
   #do we need this? only if user will have profile edit functionality
 end
 
-#destroys a specific user
 delete "/users/:id" do
   @user = User.find(params[:id])
   @user.destroy
