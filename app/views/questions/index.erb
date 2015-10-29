@@ -1,42 +1,50 @@
-<div id="questions">
+<div class="questions-container">
   <div class="question-summary">
     <% @questions.each do |question| %>
     <div class="stats-container">
       <div class="stats-arrow">
       </div>
-      <div class="stats">
-        <div class="votes">
-          <%= question.score %>
-        </div>
-        <div class="num-answers">
-          <%= question.num_answers %>
-        </div>
-        <div class="views">
-          <%= question.views %>
+      <div class="question-stats">
+          <div class="question-votes">
+            <div class="question-score-num"><%= question.score %></div>
+            <div class="question-points-label">votes</div>
+          </div>
+          <div class="question-num-answers">
+            <div class="num-answers-value"><%= question.num_answers %></div>
+            <div class="label-num-answers">answers</div>
+          </div>
+          <div class="question-views">
+            <div class="num-views"><%= question.views %></div>
+            <div class="label-views">views</div>
+          </div>
         </div>
       </div>
-    <div class="summary">
-      <h3><a href="/questions/<%=question.id%>"><%= question.title %></a></h3>
+    </div>
+    <div class="indiv-question-summary">
+      <h3 class="question-title"><a href="/questions/<%=question.id%>"><%= question.title %></a></h3>
       <div class="excerpt">
         <%= question.excerpt %>
       </div>
-      <div class="tags">
+      <div class="question-index-tags">
         <% if question.has_tags? %>
           <% question.tags.each do |tag| %>
             <a href="/questions/tagged/<%=tag.name%>" class="post-tag"><%= tag.name %></a>
           <% end %>
         <% end %>
       </div>
-      <div class="user-info">
-        <div class="question-datetime"><%= question.created_at %></div>
-        <div class="post-author"><%= question.user %></div>
+      <div class="question-user-info">
+        <div class="question-datetime"><%= format_time(question.created_at) %></div>
         <div class="post-author-details">
-          <a href="/users/<%=question.user.id%>"><%= question.user.username %></a>
-          <span class="reputation-score">4875</span>
-          <span class="silver-badge-icon"></span>
-          <span class="num-silver-badges">34</span>
+          <div class="question-author-username">
+            <a href="/users/<%=question.user_id%>"><%= find_username(question.user_id) %></a>
+          </div>
+          <span class="reputation-score"><%= rand(10..4500)%></span>
           <span class="gold-badge-icon"></span>
-          <span class="num-gold-badges">21</span>
+          <span class="num-badges"><%=rand(1..100)%></span>
+          <span class="silver-badge-icon"></span>
+          <span class="num-badges"><%=rand(1..100)%></span>
+          <span class="bronze-badge-icon"></span>
+          <span class="num-badges"><%=rand(1..100)%></span>
         </div>
       </div>
     </div>
