@@ -20,4 +20,8 @@ class Question < ActiveRecord::Base
   def num_answers
     self.answers.count
   end
+
+  def has_tags?
+    self.tags.count > 0
+  end
 end
