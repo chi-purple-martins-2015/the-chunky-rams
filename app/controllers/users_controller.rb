@@ -1,26 +1,29 @@
 enable :sessions
 
-#retrieves a list of users
 get "/users" do
   erb :"/users/index"
 end
 
-#retrieves signup user view
 get "/users/signup" do
   @signup = true
   erb :"/users/session"
 end
 
-#retrieves login view
+post "/users" do
+  @user = User.create!(email: params[:email], password: params[:password], username: params[:email])
+  #TELL THEM ABOUT THEIR REGISTRATION ERROR
+end
+
 get "/users/login" do
   erb :"/users/session"
 end
 
-#logs a user in
 post "/users/login" do
-  @user = User.authenticate(params)
+  puts "STUFFF!"
+  p params
+  @user = User.authenticate(params[:email], params[:password])
   if @user
-    session[:id] = @user.id
+    set_session_variables(@user)
     redirect "/users/#{session[:id]}"
   else
     #TELL THEM ABOUT THEIR LOGIN ERROR
@@ -28,10 +31,13 @@ post "/users/login" do
   end
 end
 
-#creates a new user
-post "/users" do
-  @user = User.create!(email: params[:email], password: params[:password], username: params[:email])
-  #TELL THEM ABOUT THEIR REGISTRATION ERROR
+get "/users/logout" do
+  erb :"users/session"
+end
+
+post "/users/logout" do
+  clear_session_variables
+  erb :index
 end
 
 #retrieve a specific user
@@ -46,17 +52,9 @@ end
 
 #destroys a specific user
 delete "/users/:id" do
-  User.find(params[:id]).destroy
+  @user = User.find(params[:id])
+  @user.destroy
   erb :index
 end
 
-#retrieves logout confirm view
-get "/users/logout" do
-  #create logout view
-end
 
-#logs a user out
-post "/users/logout" do
-  session[:id] = nil
-  erb :index
-end

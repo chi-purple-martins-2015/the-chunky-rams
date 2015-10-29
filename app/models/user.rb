@@ -21,13 +21,16 @@ class User < ActiveRecord::Base
     self.hashed_password = @password
   end
 
-  def self.authenticate(params)
-    if User.exists?(email: params[:email])
-      @user = User.find_by(email: params[:email])
-      @user.password == params[:password] ? @user : false
-      @user
-    else
-      false
+  def self.authenticate(email, password)
+    if User.exists?(email: email)
+      @user = User.find_by(email: email)
+      puts "MORE STUFF"
+      p @user.password
+      if @user.password == password
+        return @user
+      else
+        return false
+      end
     end
   end
 end
