@@ -18,7 +18,14 @@
     <div class = "questions">
       <% @questions.each do |question| %>
       <div class = "question-summary">
-        <p>hi jen!</p>
+        <div class = "question-statscontainer">
+
+          PUT STATS HERE IN MORE DIVS</div>
+
+        <div class = "question-container">
+          <div id = "question-title"><a href="/questions/<%=question.id%>"><%= question.title %></a></div>
+          <div class = "question-excerpt"> <%= question.excerpt %> </div>
+        </div>
       </div>
       <% end %>
     </div>
