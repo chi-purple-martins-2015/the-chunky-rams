@@ -4,9 +4,9 @@
   </div>
 
   <div class="vote-div">
-    <div class="upvote-arrow" title="Upvote this question">^</div>
+    <div class="upvote-arrow" title="Upvote this question"><a href="/questions/<%=@question.id%>/votes/upvote">^</a></div>
     <div class="upvote-count"><%= @question.score %></div>
-    <div class="downvote-arrow" title="Downvote this question">v</div>
+    <div class="downvote-arrow" title="Downvote this question"><a href="/questions/<%=@question.id%>/votes/downvote">v</a></div>
     <div class="star" href="#" title="Favorite this question">*</div>
     <div class="favorite-count"><%=rand(1..10)%></div>
   </div>
@@ -32,9 +32,9 @@
   <div class="question-answers">
   <% @answers.each do |answer| %>
     <div class="vote-div">
-      <div class="upvote-arrow" title="Upvote this answer">^</div>
+      <div class="upvote-arrow" title="Upvote this answer"><a href="/answers/<%=answer.id%>/votes/upvote">^</a></div>
       <div class="upvote-count"><%= answer.score %></div>
-      <div class="downvote-arrow" title="Downvote this answer">v</div>
+      <div class="downvote-arrow" title="Downvote this answer"><a href="/answers/<%=answer.id%>/votes/upvote">v</a></div>
     </div>
     <div class="individual-answer">
       <p><%= answer.body %></p>
