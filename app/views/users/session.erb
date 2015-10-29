@@ -18,7 +18,7 @@
 
   <div id="signup-login">
     <div id = "ram-network-text">
-      Ram Overflow is part of the <span=id = "ram-network-gif" ><img title="Ram Exchange" src="/images/ram_advantage_mini.gif"/></span> network of 149 Q&amp;A <a href="/">communities</a>.
+      Ram Overflow is part of the <span=id = "ram-network-gif" ><img id = "mini-ram-logo" title="Ram Exchange" src="/images/ram_advantage_mini.gif"/></span> network of 149 Q&amp;A <a href="/">communities</a>.
     </div>
 
     <div id="signup-login-wrapper">
@@ -34,7 +34,7 @@
         </div>
       </div>
 
-      <div id="or-seperator"><div id="or">OR</or></div></div>
+      <div id="or"></or></div>
  <% end %>
 
  <% if @signup %>
@@ -51,11 +51,12 @@
          <br>
 
         <div id="controls-row">
+          <div id="terms-of-service">By registering, you agree to the <a href='/'>privacy policy</a> and <a href='/'>terms of service</a>.</div>
           <a href ="/">more sign up options</a>
           <input class="signup-button" type="submit" name="signup-button" value="Sign up" />
         </div>
 
-      <div id="terms-of-service">By registering, you agree to the <a href='/'>privacy policy</a> and <a href='/'>terms of service</a>.</div>
+
     </form>
   </div>
 </div>
@@ -86,13 +87,19 @@
 
 <% else %>
 
-<div class = "login-specific-view">
-  <h2>Clicking "Log Out" will log you out of the following domains on this device:</h2>
-      <form id="signup-login-form" action="/users/logout" method="POST">
-          <p>placeholder for other stuff you might logout of on ramexchange network</p>
+<div class = "logout-specific-view">
+  <p>Clicking "Log Out" will log you out of the following domains on this device:</p>
+      <form id="logout-form" action="/users/logout" method="POST">
+
+          <ul>
+            <li><a href="#">ramexchange.com</a></li>
+            <li><a href="#">taylorswift.com</a></li>
+            <li><a href="#">godaddy.com</a></li>
+            <li><a href="#">whereshouldigotocollege.com</a></li>
+          </ul>
         <div id="controls-row">
           <a href="/">cancel</a>
-          <input class="login-button" type="submit" name="login-button" value="Log out" />
+          <input class="logout-button" type="submit" name="login-button" value="Log out" />
         </div>
       </form>
     </div>
