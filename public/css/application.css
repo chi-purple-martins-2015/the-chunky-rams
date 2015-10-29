@@ -46,7 +46,7 @@ footer {
 .navbar_li a:hover {
   /*position: absolute;*/
   height: 55px;
-  background-color: grey;
+  background-color: gray;
   height: 45;
 }
 
@@ -374,6 +374,7 @@ input {
   width: 300px;
 }
 
+
 /* **** QUESTIONS INDEX START **** */
 
 #questions-body {
@@ -388,3 +389,44 @@ input {
 
 
 /* ---- QUESTIONS INDEX END ---- */
+
+
+/*Users prifile nave */
+
+.user-top-nav {
+
+  max-width: 900px;
+  border-top: thin solid gray;
+  margin: auto;
+
+  height: 900px;
+}
+
+.user-tabs {
+    float: left;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 16px;
+    list-style: none;
+}
+
+.user-tabs li {
+    float: left;
+    padding: 10px 15px;
+    height: 20px;
+    line-height: 30px;
+}
+
+.user-tabs li a {
+    color: #666;
+    font-family: Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+}
+.user-tabs li.active {
+    border: 1px solid #ccc;
+    border-top: 2px solid #f69c55;
+    margin-bottom: -1px;
+    height: 28px;
+    padding: 5px 10px;
+}
