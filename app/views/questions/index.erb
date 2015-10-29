@@ -51,7 +51,7 @@
             <div class = "question-user-info">
               <div class = "question-time">asked <%= format_time(question.created_at) %></div>
               <div class = "question-username"><%= find_username(question.user_id) %></div>
-              <div class = "question-user-pic"> <img alt = "user picture" src = "#"/></div>
+              <div class = "question-user-pic"> <img alt = "user picture" src = "<%= User.find(question.user_id).path_to_profile_image %>"/></div>
               <span class="reputation-score"><%= rand(10..4500)%></span>
           <span class="gold-badge-icon"></span>
           <span class="num-badges"><%=rand(1..100)%></span>
