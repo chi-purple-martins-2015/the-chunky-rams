@@ -10,8 +10,11 @@ class Question < ActiveRecord::Base
     self.body[0..200]
   end
 
-  def points
-    self.votes.count
+  def score
+    if self.votes.count == 0
+      return 0
+    else self.votes.sum("vote_value")
+    end
   end
 
   def num_answers

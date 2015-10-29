@@ -28,9 +28,14 @@ Answer.all.each { |answer| answer.update_attributes(question_id:  Question.all.s
 end
 
 200.times do
+  if rand(1..3) == 1
+    vote_value = -1
+  else vote_value = 1
+  end
+
   if rand(1..2).odd?
-    Question.all.sample.votes.create(user_id: User.all.sample.id)
+    Question.all.sample.votes.create(user_id: User.all.sample.id, vote_value: vote_value)
   else
-    Answer.all.sample.votes.create(user_id: User.all.sample.id)
+    Answer.all.sample.votes.create(user_id: User.all.sample.id, vote_value: vote_value)
   end
 end

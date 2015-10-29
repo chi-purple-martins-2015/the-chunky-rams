@@ -6,7 +6,7 @@
       </div>
       <div class="stats">
         <div class="votes">
-          <%= question.points %>
+          <%= question.score %>
         </div>
         <div class="num-answers">
           <%= question.num_answers %>
@@ -21,8 +21,10 @@
         <%= question.excerpt %>
       </div>
       <div class="tags">
-        <% @question.tags.each do |tag| %>
-          <a href="/questions/tagged/<%=tag.name%>" class="post-tag"><%= tag.name %></a>
+        <% if has_tags?(@question) %>
+          <% @question.tags.each do |tag| %>
+            <a href="/questions/tagged/<%=tag.name%>" class="post-tag"><%= tag.name %></a>
+          <% end %>
         <% end %>
       </div>
       <div class="user-info">

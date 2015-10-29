@@ -9,7 +9,7 @@
           <td class="votecell">
             <div class="vote">
               <a class="upvote-arrow" title="Upvote this question">up vote</a>
-              <span class="upvote-count"><%= @question.points if @question.points %></span>
+              <span class="upvote-count"><%= @question.score %></span>
               <a class="downvote-arrow" title="Downvote this question">down vote</a>
               <a class="star" href="#" title="Favorite this question">favorite</a>
               <div class="favorite-count">
@@ -76,9 +76,7 @@
           <td class="votecell">
             <div class="vote">
               <a class="upvote-arrow" title="Upvote this answer">up vote</a>
-              <span class="upvote-count">
-                <%= rand(0..599)%>
-              </span>
+              <span class="upvote-count"><%= answer.score %></span>
               <a class="downvote-arrow" title="Downvote this answer">down vote</a>
               </div>
             </div>
