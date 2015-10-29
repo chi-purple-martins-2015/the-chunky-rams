@@ -184,7 +184,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 }
 
 .login-signup-container a {
-  color: blue;
+  color: #0077CD;
   text-decoration: none;
   }
 
@@ -192,7 +192,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
   width: 1000px;
   height: 35px;
   margin: 0 auto;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #E6E6E6;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -211,10 +211,10 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
   width: 33.125px;
   height: 12px;
   padding: 10px;
-  border-top: 2px solid orange;
+  border-top: 2px solid #F69C55;
   border-bottom: none;
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
+  border-left: 1px solid #E6E6E6;
+  border-right: 1px solid #E6E6E6;
   margin-right: 8px;
 }
 
@@ -231,12 +231,18 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 }
 
 #signup-login-wrapper {
-  width: 208px;
-  padding: 30px;
-  border: 1px solid gray;
+  width: 300px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  border: 1px solid #E6E6E6;
+  margin-top: 20px;
+  margin-bottom:20px;
   margin-right: 329px;
   margin-left: 329px;
 }
+
 
 #google-fb-buttons {
   width: 280px;
@@ -249,7 +255,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
   float: left;
   width: 136px;
   height: 38px;
-  border: 1px solid whitesmoke;
+  border: 1px solid #E6E6E6;
   background-color: #E0492F;
   color: #FFFFFF;
 }
@@ -264,7 +270,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
   float: right;
   width: 136px;
   height: 38px;
-  border: 1px solid whitesmoke;
+  border: 1px solid #E6E6E6;
   background-color: #395697;
   color: #FFFFFF;
 }
@@ -305,28 +311,37 @@ input {
   width: 263px;
   height: 18px;
   padding: 8px;
-  border: 1px solid black;
+  border: 1px solid #E6E6E6;
   margin-top: 5px;
-  margin-bottom: 10px.
+  margin-bottom: 10px;
+  background-color: #FAFFBD;
 }
 
 .signup-button, .login-button {
+  display: block;
+  float: right;
   border-radius: 5px;
   width: 136px;
   height: 38px;
   padding: 12px 50px;
   margin-top: 5px;
   background-color: #0077CC;
+  color: white;
 }
 
 #switch-to-signup, #switch-to-login {
   width: 300px;
   height: 19px;
   padding: 20px;
-  border: 1px solid gray;
+  border: 1px solid #E6E6E6;
   margin-top: 20px;
   margin-bottom:100px;
   margin-left: 329px;
   margin-right: 329px;
 
+}
+
+#controls-row {
+  float: left;
+  width: 300px;
 }
