@@ -17,7 +17,7 @@ end
 
 
 get '/tags/name' do
-  @tags = Tag.all.order(name: :desc)
+  @tags = Tag.all.order(name: :asc)
 
   erb :'tags/name'
 end
