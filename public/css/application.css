@@ -217,16 +217,6 @@ span {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .tag-container {
   max-width: 900px;
   border-top: thin solid gray;
@@ -348,16 +338,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 
 }
 
-/** {
-  background-color: #FFFFFF;
-  -webkit-box-sizing: border-box;
-  -mox-box-sizing: border-box;
-  box-sizing: border-box;
-
-  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-}*/
-
-/*LOGIN AND SIGNUP PAGE*/
+/*LOGIN, LOGOUT AND SIGNUP PAGE*/
 
 .login-signup-container {
   background-color: #FFFFFF;
@@ -535,19 +516,80 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 /* **** QUESTIONS INDEX START **** */
 
 .questions-container {
-  width: 830px;
-  margin-top: 230px;
-  margin-bottom: 20px;
-  /*background-color: #FFFFFF;*/
-  background-color: green;
-  font-family: sans-serif;
+  width: 1030px;
+  height: 4755px;
+  margin-top: 100px;
+  padding: 15px;
   -webkit-box-sizing: border-box;
     -mox-box-sizing: border-box;
       box-sizing: border-box;
-          font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.questions-content {
+  width: 1000px;
+  height: 4629px;
+  padding: 15px;
+}
+
+.questions-mainbar {
+  display: inline-block;
+  float: left;
+  width: 728px;
+  height: 4629px;
+}
+
+.questions-mainbar-header {
+  display: inline-block;
+  float: left;
+  width: 728px;
+  height: 34px;
+  border-bottom: 1px;
+}
+
+#questions-mainbar-header-tabs {
+  float: right;
+}
+
+.questions-mainbar-header a {
+  color: black;
+  text-decoration: none;
+  font-size: 13px
+  }
+
+#all-questions {
+  width: 106px;
+  height: 23;
+}
+
+.questions {
+  width: 728px;
+  height: 4629px;
+  border-bottom: 20px;
+}
+
+
+
+.questions-sidebar {
+  background-color: blue;
+  display: inline-block;
+  float: right;
+  width: 220px;
+  height: 2450px;
+  margin-bottom: 15px;
 }
 
 .question-summary {
+  width: 728px;
+  height: 125.50px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+
+
+
+/*.question-summary {
   width: 730px;
   height:146px;
 }
@@ -577,7 +619,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
   font-size: 12px;
   white-space: nowrap;
   padding: 8px;
-}*/
+}
 
 .question-datetime {
   margin-top: 2px;
@@ -688,7 +730,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 .label-views {
   font-size: 11px;
 }
-
+*/*/
 /* ---- QUESTIONS INDEX END ---- */
 
 
