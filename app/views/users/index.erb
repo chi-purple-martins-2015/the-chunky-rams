@@ -1,1 +1,72 @@
-list of users view goes here
+  <div class="user-container">
+
+    <ul class="user-tabs">
+        <% if @active_tab == 'new' %>
+          <li class="active"><a href="/users/new">new users</a></li>
+        <% else %>
+          <li><a href="/users/new">new users</a></li>
+        <% end %>
+        <% if @active_tab == 'voters' %>
+          <li class="active"><a href="/users/voters">voters</a></li>
+        <% else %>
+          <li><a href="/users/voters">voters</a></li>
+        <% end %>
+        <% if @active_tab == 'editors' %>
+          <li class='active'><a href="/users/editors">editors</a></li>
+        <% else %>
+        <li><a href="/users/editors">editors</a></li>
+        <% end %>
+        <% if @active_tab == 'moderators' %>
+          <li class='active'><a href="/users/moderators">moderators</a></li>
+        <% else %>
+          <li><a href="/users/moderators">moderators</a></li>
+        <% end %>
+        <% if @active_tab == 'reputation' %>
+          <li class="active"><a href="/users">reputation</a></li>
+        <% else %>
+          <li><a href="/users">reputation</a></li>
+        <% end %>
+    </ul>
+
+
+    <div class="user-page-description">
+      <div>
+        <form id= 'user-search' method='post' action='/user/find'>
+          <label>Type to find users:</label>
+          <input type='text' name='username'>
+        </form>
+      </div>
+
+      <div class="small-links">
+        <a href='/users'>week</a> <a href='/users'>month</a> <a href='/users'>quarter</a> <a href='/users'>year</a> <a href='/users'>all</a>
+      </div>
+
+    </div>
+
+    <div class="user-list">
+        <% @user.each do |user|%>
+        <div class="user-div">
+            <div class='thumbnail'>
+              <a href=<%="/users/#{user[:id]}"%>><img src=<%=user[:image]%>></a>
+            </div>
+            <div class='user-blurb'>
+              <div class='user-blue-link'>
+                <p><a href=<%="/users/#{user[:id]}"%>><%=user[:username]%></a></p>
+              </div>
+              <p><%=user[:location]%></p>
+              <p><%=user[:votes]%><p>
+              <% user[:tags].each_with_index do |tag, index| %>
+                  <%if (index + 1) == user[:tags].length%>
+                    <a href=<%="http://localhost:9393/tags/#{tag.id}"%>><%= "#{tag.name}"%></a>
+                  <%else%>
+                    <a href=<%="http://localhost:9393/tags/#{tag.id}"%>><%= "#{tag.name},"%></a>
+                  <%end%>
+              <% end %>
+              </p>
+            </div>
+        </div>
+      <% end %>
+    </table>
+  </div>
+
+</div>

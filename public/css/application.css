@@ -867,14 +867,13 @@ span > img:hover {
 .user-tabs li a {
 
     color: #666;
-    /*font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; */
+
     text-decoration: none;
     font-size: 13px;
 }
 .user-tabs li.active {
 
     position: relative;
-    left: -2.5em;
     border: 1px solid #ccc;
     border-top: 2px solid #f69c55;
     margin-bottom: -1px;
@@ -990,7 +989,7 @@ span > img:hover {
   font-size: 20px;
   font-weight: 20px;
   position: relative;
-  right: 1.5em;
+  right: -1.5em;
   top:-2em;
 }
 
