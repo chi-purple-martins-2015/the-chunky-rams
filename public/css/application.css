@@ -200,13 +200,15 @@ footer {
   transition: 0.2s;
 }
 
-a {
+header a {
   text-decoration: none;
   color: white;
   height: 100%;
 }
 
-span {
+header span {
+  position: absolute;
+  top: 7px;
   color: white;
   font-weight: bold;
   letter-spacing: 1px;
