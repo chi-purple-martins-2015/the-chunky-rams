@@ -373,3 +373,18 @@ input {
   float: left;
   width: 300px;
 }
+
+/* **** QUESTIONS INDEX START **** */
+
+#questions-body {
+  width: 80%;
+  border: 1px solid blue;
+  background-color: green;
+}
+
+.question-summary {
+  border: 1px solid red;
+}
+
+
+/* ---- QUESTIONS INDEX END ---- */
