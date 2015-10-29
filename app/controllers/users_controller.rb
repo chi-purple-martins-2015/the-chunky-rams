@@ -12,6 +12,7 @@ end
 post "/users" do
   @user = User.create!(email: params[:email], password: params[:password], username: params[:email])
   #TELL THEM ABOUT THEIR REGISTRATION ERROR
+  redirect "/users/login"
 end
 
 get "/users/login" do
@@ -37,10 +38,9 @@ end
 
 post "/users/logout" do
   clear_session_variables
-  erb :index
+  redirect "/"
 end
 
-#retrieve a specific user
 get "/users/:id" do
   erb :"/users/profile"
 end
@@ -50,7 +50,6 @@ put "/users/:id" do
   #do we need this? only if user will have profile edit functionality
 end
 
-#destroys a specific user
 delete "/users/:id" do
   @user = User.find(params[:id])
   @user.destroy

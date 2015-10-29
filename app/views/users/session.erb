@@ -40,7 +40,7 @@
  <% if @signup %>
  <!-- SHOW IF SIGNING UP, HIDE IF LOGGING IN -->
     <div class = "signup-specific-view">
-      <form id="signup-form" action="/users" method="POST">
+      <form id="signup-login-form" action="/users" method="POST">
           <label for="email">Email (required, but never shown)</label><br/>
           <input type="email" name="email" placeholder="you@example.org"/><br/>
           <label for="password">Password</label><br/>
@@ -67,7 +67,7 @@
 
 <!-- SHOW IF LOGGING IN, HIDE IF SIGNING UP -->
     <div class = "login-specific-view">
-      <form id="login-form" action="/users/login" method="POST">
+      <form id="signup-login-form" action="/users/login" method="POST">
           <label for="email">Email</label><br/>
           <input type="email" name="email" placeholder="you@example.org"/><br/>
           <label for="password">Password</label><br/>
@@ -88,7 +88,7 @@
 
 <div class = "login-specific-view">
   <h2>Clicking "Log Out" will log you out of the following domains on this device:</h2>
-      <form id="login-form" action="/users/logout" method="POST">
+      <form id="signup-login-form" action="/users/logout" method="POST">
           <p>placeholder for other stuff you might logout of on ramexchange network</p>
         <div id="controls-row">
           <a href="/">cancel</a>
