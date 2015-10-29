@@ -1,5 +1,5 @@
 get "/questions" do
-  @questions = Question.find(:all, limit: 15)
+  @questions = Question.limit(15)
   erb :"questions/index"
 end
 
