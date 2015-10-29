@@ -25,22 +25,18 @@
 
     <div class="tag-list">
       <% @tags.each do |tag|%>
-
-      <div class="tag-div">
-        <span class="tag-name">
-          <%= tag.name%>
-        </span>
+        <div class="tag-div">
+          <span class="tag-name">
+            <%= tag.name%>
+          </span>
           <p class="tag-description">
             <%= tag.description%>
           </p>
           <p class="question-count">
             <%= tag.questions.count%> &nbsp;asked today
-
           </p>
-      </div>
-
+        </div>
       <% end%>
-
     </div>
 
 </div>
