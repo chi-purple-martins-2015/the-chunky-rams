@@ -1,5 +1,15 @@
 <div class="login-signup-container">
+
+<% if @logout %>
   <div id="signup-login-header">
+    <div id="signup-login-header-tabs">
+        <a class = "tab" id = "logout-tab" href="/users/logout" title="Log out of Ram Overflow">Log Out</a>
+    </div>
+  </div>
+
+ <% else %>
+
+<div id="signup-login-header">
     <div id="signup-login-header-tabs">
         <a class = "tab" id = "login-tab" href="/users/login" title="Log in to Ram Overflow">Log in</a>
         <a class = "tab" id = "signup-tab" href="/users/signup" title="Sign up to Ram Overflow">Sign up</a>
@@ -8,7 +18,7 @@
 
   <div id="signup-login">
     <div id = "ram-network-text">
-      Ram Overflow is part of the <img title="Ram Exchange" src="/images/logo.png"/> network of 149 Q&amp;A <a href="/">communities</a>.
+      Ram Overflow is part of the <span=id = "ram-network-gif" ><img title="Ram Exchange" src="/images/ram_advantage_mini.gif"/></span> network of 149 Q&amp;A <a href="/">communities</a>.
     </div>
 
     <div id="signup-login-wrapper">
@@ -25,6 +35,7 @@
       </div>
 
       <div id="or-seperator"><div id="or">OR</or></div></div>
+ <% end %>
 
  <% if @signup %>
  <!-- SHOW IF SIGNING UP, HIDE IF LOGGING IN -->
@@ -52,8 +63,8 @@
     <div id="switch-to-login">Already have an account? <a href="/users/login">Log in</a></div>
     </div>
 
+<% elsif @login %>
 
-<% else %>
 <!-- SHOW IF LOGGING IN, HIDE IF SIGNING UP -->
     <div class = "login-specific-view">
       <form id="login-form" action="/users/login" method="POST">
@@ -72,6 +83,21 @@
 
     <div id="switch-to-signup">Don't have an account? <a href="/users/signup">Sign up</a></div>
   </div>
+
+<% else %>
+
+<div class = "login-specific-view">
+  <h2>Clicking "Log Out" will log you out of the following domains on this device:</h2>
+      <form id="login-form" action="/users/logout" method="POST">
+          <p>placeholder for other stuff you might logout of on ramexchange network</p>
+        <div id="controls-row">
+          <a href="/">cancel</a>
+          <input class="login-button" type="submit" name="login-button" value="Log out" />
+        </div>
+      </form>
+    </div>
+  </div>
+
 
 <% end %>
 

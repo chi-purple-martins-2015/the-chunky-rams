@@ -15,12 +15,11 @@ post "/users" do
 end
 
 get "/users/login" do
+  @login = true
   erb :"/users/session"
 end
 
 post "/users/login" do
-  puts "STUFFF!"
-  p params
   @user = User.authenticate(params[:email], params[:password])
   if @user
     set_session_variables(@user)
@@ -32,6 +31,7 @@ post "/users/login" do
 end
 
 get "/users/logout" do
+  @logout = true
   erb :"users/session"
 end
 
