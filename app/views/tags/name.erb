@@ -1,5 +1,4 @@
  <div class="tag-container">
-
   <ul class="tabs">
     <div class="tag">Tags</div>
       <li><a href="/tags/new">new</a></li>
@@ -7,7 +6,7 @@
       <li><a href="/tags">popular</a></li>
   </ul>
 
-  <div id="name">
+  <div class="page-description">
     <p>A tag is a keyword or label that categorizes your question with other, similar questions. Using the right tags makes it easier for others to find and answer your question.
     </p>
 
@@ -21,10 +20,8 @@
         </tr>
       </tbody>
     </table>
-
     <div class="tag-list">
       <% @tags.each do |tag|%>
-
       <div class="tag-div">
         <span class="tag-name">
           <%= tag.name%>
@@ -34,13 +31,9 @@
           </p>
           <p class="question-count">
             <%= tag.questions.count%> &nbsp;asked today
-
           </p>
       </div>
-
       <% end%>
-
     </div>
-
   </div>
 </div>
