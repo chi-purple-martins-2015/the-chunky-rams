@@ -1,3 +1,3 @@
 get "/" do
-  erb :index
+  erb :index_2
 end
