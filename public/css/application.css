@@ -67,7 +67,7 @@ footer {
   width: 200px;
   height: 50px;
   margin-left: 200px;
-  margin-top: 70px;
+  margin-top: 20px;
 }
 
 .logo_navbar {
@@ -228,7 +228,9 @@ span {
 .tag-container {
   max-width: 900px;
   border-top: thin solid gray;
-  margin: auto;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
   height: 900px;
 }
 
@@ -290,10 +292,9 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 .tag-description {
 
     max-width: 190px;
-        font-family: Arial,Liberation Sans,DejaVu Sans,sans-serif;
+    font-family: Arial,Liberation Sans,DejaVu Sans,sans-serif;
     font-size: 12px;
     color: #888;
-
 }
 
 .tag-list {
@@ -323,7 +324,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 
     padding: 1em;
     border: thin solid gray;
-
+    clear: both;
     font-size: 14px;
     margin: 10px 0;
     line-height: 18px;
@@ -559,4 +560,3 @@ input {
     height: 28px;
     padding: 5px 10px;
 }
-
