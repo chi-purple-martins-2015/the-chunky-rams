@@ -13,9 +13,6 @@
 
   <div class="question-body">
     <p><%= @question.body %></p>
-    <div class="post-user-info">
-      <span class="post-username"><a href="/users/<%=@question.user_id%>"><%= find_username(@question.user_id) %></a></span>
-    </div>
   </div>
 
   <div class="question-comments">
@@ -37,13 +34,10 @@
     <div class="vote-div">
       <div class="upvote-arrow" title="Upvote this answer"><a href="/answers/<%=answer.id%>/votes/upvote">^</a></div>
       <div class="upvote-count"><%= answer.score %></div>
-      <div class="downvote-arrow" title="Downvote this answer"><a href="/answers/<%=answer.id%>/votes/downvote">v</a></div>
+      <div class="downvote-arrow" title="Downvote this answer"><a href="/answers/<%=answer.id%>/votes/upvote">v</a></div>
     </div>
     <div class="individual-answer">
       <p><%= answer.body %></p>
-      <div class="post-user-info">
-        <span class="post-username"><a href="/users/<%=answer.user_id%>"><%= find_username(answer.user_id) %></a></span>
-      </div>
     </div>
   </div>
 
@@ -58,16 +52,4 @@
   </div>
   <% end %>
 
-  <div class="add-new-answer">
-    <form id="new-answer" action="/questions/<%=@question.id%>/answers" method="post">
-      <h2>Your Answer</h2>
-      <% if logged_in? %>
-      <div id="post-editor">
-        <textarea id="answer-input" cols="80" rows="12" tabindex="101"></textarea>
-      </div>
-      <input type="submit" value="Post Your Answer" class="button">
-      <% else %>
-      <p class="foot-links"><a href="/users/login">Log in</a> or <a href="/users/new">sign up</a> to add your answer.</p>
-      <% end %>
-  </div>
 </div>

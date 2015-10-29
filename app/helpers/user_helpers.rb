@@ -14,4 +14,7 @@ helpers do
     session[:email] = nil
   end
 
+  def logged_in?
+    session[:id] != nil
+  end
 end
