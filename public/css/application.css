@@ -5,7 +5,14 @@ header {
   background-color: #1F1E1E;
 }
 
+body {
+  height: 2000px;
+}
+
 footer {
+  position: relative;
+  bottom: 0;
+  top: 1140em;
   height: 200px;
   width: 100%;
   background-color: #1F1E1E;
@@ -25,7 +32,7 @@ footer {
   max-height: 16px;
   margin-top: 5px;
 }
-.navbar {
+.top_navbar {
   margin-top: 5px;
   margin-bottom: auto;
   float: right;
@@ -33,7 +40,7 @@ footer {
   margin-right: 35px;
 }
 
-.navbar_li {
+.top_navbar_li {
   height: 50px;
   display: inline;
   margin-left: 10px;
@@ -60,9 +67,138 @@ footer {
   width: 200px;
   height: 50px;
   margin-left: 200px;
-  margin-top: 70px;
+  margin-top: 20px;
 }
 
+.logo_navbar {
+  height: 50px;
+  position: absolute;
+  right: 30px;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+  list-style: none;
+  color: white;
+  font-size: 15px;
+
+}
+
+#logo_navbar_question {
+  height: 24px;
+  width: 90px;
+  background-color: grey;
+  float: right;
+  margin-left: 3px;
+  margin-right: 3px;
+  text-align: center;
+  padding-top: 6px;
+
+}
+
+#logo_navbar_tag {
+  height: 24px;
+  width: 60px;
+  background-color: grey;
+  float: right;
+  margin-left: 3px;
+  margin-right: 3px;
+  text-align: center;
+  padding-top: 6px;
+}
+
+#logo_navbar_user {
+  height: 24px;
+  width: 65px;
+  background-color: grey;
+  float: right;
+  margin-left: 3px;
+  margin-right: 3px;
+  text-align: center;
+  padding-top: 6px;
+}
+
+#logo_navbar_unanswered {
+  height: 24px;
+  width: 110px;
+  background-color: grey;
+  float: right;
+  margin-left: 3px;
+  margin-right: 3px;
+  text-align: center;
+  padding-top: 6px;
+}
+
+#logo_navbar_ask {
+  height: 24px;
+  width: 120px;
+  background-color: grey;
+  float: right;
+  margin-left: 3px;
+  margin-right: 3px;
+  text-align: center;
+  padding-top: 6px;
+}
+
+#logo_navbar_question:hover {
+  height: 24px;
+  width: 90px;
+  background-color: orange;
+  float: right;
+  margin-left: 3px;
+  margin-right: 3px;
+  text-align: center;
+  padding-top: 6px;
+  transition: 0.2s;
+
+}
+
+#logo_navbar_tag:hover {
+  height: 24px;
+  width: 60px;
+  background-color: orange;
+  float: right;
+  margin-left: 3px;
+  margin-right: 3px;
+  text-align: center;
+  padding-top: 6px;
+  transition: 0.2s;
+}
+
+#logo_navbar_user:hover {
+  height: 24px;
+  width: 65px;
+  background-color: orange;
+  float: right;
+  margin-left: 3px;
+  margin-right: 3px;
+  text-align: center;
+  padding-top: 6px;
+  transition: 0.2s;
+}
+
+#logo_navbar_unanswered:hover {
+  height: 24px;
+  width: 110px;
+  background-color: orange;
+  float: right;
+  margin-left: 3px;
+  margin-right: 3px;
+  text-align: center;
+  padding-top: 6px;
+  transition: 0.2s;
+}
+
+#logo_navbar_ask:hover {
+  height: 24px;
+  width: 120px;
+  background-color: orange;
+  float: right;
+  margin-left: 3px;
+  margin-right: 3px;
+  text-align: center;
+  padding-top: 6px;
+  transition: 0.2s;
+}
 
 a {
   text-decoration: none;
@@ -78,12 +214,23 @@ span {
 
 }
 
-.tag-container {
 
+
+
+
+
+
+
+
+
+
+
+.tag-container {
   max-width: 900px;
   border-top: thin solid gray;
-  margin: auto;
-
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
   height: 900px;
 }
 
@@ -145,10 +292,9 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 .tag-description {
 
     max-width: 190px;
-        font-family: Arial,Liberation Sans,DejaVu Sans,sans-serif;
+    font-family: Arial,Liberation Sans,DejaVu Sans,sans-serif;
     font-size: 12px;
     color: #888;
-
 }
 
 .tag-list {
@@ -178,7 +324,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 
     padding: 1em;
     border: thin solid gray;
-
+    clear: both;
     font-size: 14px;
     margin: 10px 0;
     line-height: 18px;
@@ -414,4 +560,3 @@ input {
     height: 28px;
     padding: 5px 10px;
 }
-
