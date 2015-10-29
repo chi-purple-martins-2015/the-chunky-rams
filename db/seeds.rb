@@ -6,7 +6,7 @@
   Tag.create(name: Faker::Hacker.adjective, description: Faker::Hacker.say_something_smart)
 
   User.create(username: (Faker::Name.first_name + index.to_s), email: Faker::Internet.email, path_to_profile_image: Faker::Avatar.image("my-own-slug", "50x50"), password: 'password').questions.create(title: (['Problem with', 'Question about', 'Need help with', 'Wondering about', 'Confused about'].sample + ' ' + Faker::Hacker.adjective + ' ' + Faker::Hacker.noun), views: rand(1..1000), body: (['I have a problem with', 'I have a question about', 'I need help with', 'I am wondering about', 'Confused about'].sample + ' ' + Faker::Hacker.adjective + ' ' + Faker::Hacker.noun + '.'))
-  Tag.create(name: Faker::Hacker.adjective)
+  Tag.create(name: Faker::Hacker.adjective, description: Faker::Hacker.say_something_smart)
   end
 end
 
@@ -34,7 +34,3 @@ end
     Answer.all.sample.votes.create(user_id: User.all.sample.id)
   end
 end
-
-
-
-

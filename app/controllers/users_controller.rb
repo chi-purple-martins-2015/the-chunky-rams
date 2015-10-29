@@ -2,7 +2,7 @@ enable :sessions
 
 #retrieves a list of users
 get "/users" do
-
+  erb :"/users/index"
 end
 
 #retrieves signup user view
@@ -32,7 +32,6 @@ end
 post "/users" do
   @user = User.create!(email: params[:email], password: params[:password], username: params[:email])
   #TELL THEM ABOUT THEIR REGISTRATION ERROR
-
 end
 
 #retrieve a specific user
@@ -42,19 +41,22 @@ end
 
 #updates a specific user
 put "/users/:id" do
-
+  #do we need this? only if user will have profile edit functionality
 end
 
 #destroys a specific user
 delete "/users/:id" do
-
+  User.find(params[:id]).destroy
+  erb :index
 end
 
-#retrieves logout view
+#retrieves logout confirm view
 get "/users/logout" do
-
+  #create logout view
 end
 
 #logs a user out
-get "/users/logout" do
+post "/users/logout" do
+  session[:id] = nil
+  erb :index
 end
