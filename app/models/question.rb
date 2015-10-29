@@ -11,6 +11,9 @@ class Question < ActiveRecord::Base
   end
 
   def points
+    if self.votes.count = 0
+      return 0
+    else self.votes.sum("vote_value")
     # self.votes.
   end
 
