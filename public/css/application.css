@@ -731,3 +731,60 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
     height: 28px;
     padding: 5px 10px;
 }
+
+/* **** QUESTIONS INDEX END **** */
+
+/* **** QUESTION SHOW START **** */
+
+#content {
+  width: 830px;
+  margin-top: 230px;
+  margin-bottom: 20px;
+  background-color: #FFFFFF;
+  font-family: sans-serif;
+  -webkit-box-sizing: border-box;
+    -mox-box-sizing: border-box;
+      box-sizing: border-box;
+          font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+#question-header {
+  text-align: left;
+  clear: both;
+  padding: 5px 0;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 1em;
+}
+
+#question-header h1 {
+  color: #222;
+  font-size: 24px;
+  line-height: 1.35;
+  font-weight: normal;
+  margin-bottom: .5em;
+}
+
+#mainbar {
+  float: left;
+  width: 728px;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+.question {
+  clear: both;
+  line-height: 1.3em;
+  color: #222;
+}
+
+.votecell {
+  vertical-align: top;
+  padding-right: 15px;
+
+}
+
+a {
+  color: black;
+}
+
+/* **** QUESTION SHOW END **** */
