@@ -83,14 +83,13 @@ span {
   max-width: 900px;
   border-top: thin solid gray;
   margin: auto;
-
   height: 900px;
 }
 
 .tabs {
     float: right;
     border-bottom: 1px solid #ccc;
-    width: 100%;
+    width: 94%;
     margin-bottom: 16px;
     list-style: none;
 }
@@ -104,7 +103,7 @@ span {
 
 .tabs li a {
     color: #666;
-    font-family: Helvetica, Arial, sans-serif;
+    /*font-family: Helvetica, Aria l, sans-serif;*/
     text-decoration: none;
     font-size: 13px;
 }
@@ -119,7 +118,7 @@ span {
 .tag {
     position: relative;
     top: 1.5em;
-    left: .5em;
+    left: -2em;
     width: 30px;
     font-size: 22px;
 
@@ -138,14 +137,16 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
     background-color: #e4edf4;
     font-size: 12px;
     white-space: nowrap;
-    padding: 8px;
+    /*font-family: Helvetica, Arial, sans-serif;*/
+    padding: 5px;
+    margin:0;
 
 }
 
 .tag-description {
 
     max-width: 190px;
-        font-family: Arial,Liberation Sans,DejaVu Sans,sans-serif;
+        /*font-family: Arial,Liberation Sans,DejaVu Sans,sans-serif;*/
     font-size: 12px;
     color: #888;
 
@@ -177,8 +178,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 .page-description {
 
     padding: 1em;
-    border: thin solid gray;
-
+    margin: 0;
     font-size: 14px;
     margin: 10px 0;
     line-height: 18px;
@@ -191,14 +191,16 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
         font-family: Arial,Liberation Sans,DejaVu Sans,sans-serif;
     font-size: 12px;
     color: black;
+  }
 
-* {
+/** {
   background-color: #FFFFFF;
   -webkit-box-sizing: border-box;
   -mox-box-sizing: border-box;
   box-sizing: border-box;
+
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-}
+}*/
 
 /*LOGIN AND SIGNUP PAGE*/
 
@@ -403,7 +405,7 @@ input {
 
 .user-tabs li a {
     color: #666;
-    font-family: Helvetica, Arial, sans-serif;
+    /*font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;*/
     text-decoration: none;
     font-size: 13px;
 }
