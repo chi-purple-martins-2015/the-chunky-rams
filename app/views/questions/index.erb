@@ -1,0 +1,43 @@
+<div id="questions">
+  <div class="question-summary">
+    <% @questions.each do |question| %>
+    <div class="stats-container">
+      <div class="stats-arrow">
+      </div>
+      <div class="stats">
+        <div class="votes">
+          <%= question.points %>
+        </div>
+        <div class="num-answers">
+          <%= question.num_answers %>
+        </div>
+        <div class="views">
+          <%= question.views %>
+        </div>
+      </div>
+    <div class="summary">
+      <h3><a href="/questions/<%=question.id%>"><%= question.title %></a></h3>
+      <div class="excerpt">
+        <%= question.excerpt %>
+      </div>
+      <div class="tags">
+        <% @question.tags.each do |tag| %>
+          <a href="/questions/tagged/<%=tag.name%>" class="post-tag"><%= tag.name %></a>
+        <% end %>
+      </div>
+      <div class="user-info">
+        <div class="question-datetime"><%= question.created_at %></div>
+        <div class="post-author"><%= question.user %></div>
+        <div class="post-author-details">
+          <a href="/users/<%=question.user.id%>"><%= question.user.username %></a>
+          <span class="reputation-score">4875</span>
+          <span class="silver-badge-icon"></span>
+          <span class="num-silver-badges">34</span>
+          <span class="gold-badge-icon"></span>
+          <span class="num-gold-badges">21</span>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>

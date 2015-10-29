@@ -1,0 +1,197 @@
+<div id="content">
+  <div id="question-header">
+    <h1><%= @question.title %></h1>
+  </div>
+  <div id="mainbar">
+    <div class="question">
+      <table>
+        <tbody>
+          <td class="votecell">
+            <div class="vote">
+              <a class="upvote-arrow" title="Upvote this question">up vote</a>
+              <span class="upvote-count"><%= @question.points %></span>
+              <a class="downvote-arrow" title="Downvote this question">down vote</a>
+              <a class="star" href="#" title="Favorite this question">favorite</a>
+              <div class="favorite-count">
+              </div>
+            </div>
+          </td>
+          <td class="postcell">
+            <div class="post-text">
+              <%= @question.body %>
+            </div>
+            <div class="post-taglist">
+              <% @question.tags.each do |tag| %>
+                <a href="/questions/tagged/<%=tag.name%>" class="post-tag"><%= tag.name %></a>
+              <% end %>
+            </div>
+            <table class="post-footer">
+              <tbody>
+                <tr>
+                  <td class="question-links">
+                    <div class="post-menu">
+                      <a href="/q/<%=@question.id%>/" title="short permalink to this question" class="short-link">share</a>
+                      <a href-"/questions/<%=@question.id%>/edit" class="suggest-edit-post">improve this question</a>
+                    </div>
+                  </td>
+                  <td class="question-owner-signature">
+                    <div class="user-info">
+                      <div class="question-datetime"><%= @question.created_at %></div>
+                      <div class="post-author"><%= @question.user %></div>
+                      <div class="post-author-details">
+                        <a href="/users/<%=@question.user.id%>"><%= @question.user.username %></a>
+                        <span class="reputation-score">4875</span>
+                        <span class="silver-badge-icon"></span>
+                        <span class="num-silver-badges">34</span>
+                        <span class="gold-badge-icon"></span>
+                        <span class="num-gold-badges">21</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+          <tr>
+            <td class="votecell"></td>
+            <td>
+              <div id="question/<%=@question.id%>/comments" class="comments">
+                <% @question.comments.each do |comment| %>
+                <tr>
+                  <span class="comment-body"><%= comment.body %></span> -
+                  <span class="comment-author"><a href="/users/<%=comment.user.id%>"><%= comment.user.username %></a></span>
+                  <span class="comment-datetime"><%= comment.created_at %></span>
+                </tr>
+                <% end %>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="answers">
+      <% @answers.each do |answer| %>
+      <table>
+        <tbody>
+          <td class="votecell">
+            <div class="vote">
+              <a class="upvote-arrow" title="Upvote this answer">up vote</a>
+              <span class="upvote-count"><%= answer.points %></span>
+              <a class="downvote-arrow" title="Downvote this answer">down vote</a>
+              </div>
+            </div>
+          </td>
+          <td class="answercell">
+            <div class="post-text">
+              <%= answer.body %>
+            </div>
+            <table class="post-footer">
+              <tbody>
+                <tr>
+                  <td class="answer-links">
+                    <div class="post-menu">
+                      <a href="/a/<%=answer.id%>/" title="short permalink to this answer" class="short-link">share</a>
+                      <a href-"/answers/<%=answer.id%>/edit" class="suggest-edit-post">improve this answer</a>
+                    </div>
+                  </td>
+
+                  <td class="question-owner-signature">
+                    <div class="user-info">
+                      <div class="question-datetime"><%= answer.created_at %></div>
+                      <div class="post-author"><%= answer.user %></div>
+                      <div class="post-author-details">
+                        <a href="/users/<%=answer.user.id%>"><%= answer.user.username %></a>
+                        <span class="reputation-score">4875</span>
+                        <span class="silver-badge-icon"></span>
+                        <span class="num-silver-badges">34</span>
+                        <span class="gold-badge-icon"></span>
+                        <span class="num-gold-badges">21</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+          <tr>
+            <td class="votecell"></td>
+            <td>
+              <div id="question/<%=answer.id%>/comments" class="comments">
+                <% answer.comments.each do |comment| %>
+                <tr>
+                  <span class="comment-body"><%= comment.body %></span> -
+                  <span class="comment-author"><a href="/users/<%=comment.user.id%>"><%= comment.user.username %></a></span>
+                  <span class="comment-datetime"><%= comment.created_at %></span>
+                </tr>
+                <% end %>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <% end %>
+    </div>
+    <form id="new-answer" action="/questions/<%=@question.id%>/answers" method="post">
+      <h2>Your Answer</h2>
+      <div id="post-editor">
+        <textarea id="answer-input" cols="92" rows="15" tabindex="101"></textarea>
+      </div>
+      <div class="new-login-form">
+        <div class="new-login-left">
+          <h3>Sign up or <a href="/users/login" id="login-link">log in</a></h3>
+          <div class="sign-up-using-google">
+            <p>
+              <span id="google-icon"></span>
+              <span>Sign up using Google</span>
+            </p>
+          </div>
+          <div class="sign-up-using-facebook">
+            <p>
+              <span id="facebook-icon"></span>
+              <span>Sign up using Facebook</span>
+            </p>
+          </div>
+          <div class="sign-up-using-email-password">
+            <p>
+              <span id="stack-exchange-icon"></span>
+              <span>Sign up using Email and Password</span>
+            </p>
+          </div>
+        </div>
+        <div class="new-login-right">
+          <h3>Post as a guest</h3>
+          <div class="form-item">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="guest-login">
+                    <div>
+                      <label for="display-name">Name</label>
+                      <input id="display-name" name="display-name" type="text" size="30" maxlength="30" tabindex="106">
+                    </div>
+                    <div>
+                      <label for="email-address">Email</label>
+                      <input id="email-address" name="email-address" type="email" size="30" maxlength="100" tabindex="106" placeholder="required, but never shown">
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="form-submit">
+        <input id="submit-button" type="submit" value="Post Your Answer" tabindex="110">
+      </div>
+      <p class="privacy-policy-agreement">
+        By posting your answer, you agree to the <a href="#">privacy policy</a> and <a href="#">terms of service</a>.
+      </p>
+    </form>
+    <h2 class="bottom-notice">
+      Not the answer you're looking for? Browse other questions tagged
+      <% @question.tags.each do |tag| %>
+        <a href="/questions/tagged/<%=tag.name%>" class="post-tag"><%= tag.name %></a>
+      <% end %>
+      or <a href="/questions/new">ask your own question</a>.
+    </h2>
+</div>

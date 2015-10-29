@@ -1,0 +1,76 @@
+<div id="signup-login-header">
+    <div id="signup-login-header-tabs">
+        <a class = "tab" id = "login-tab" href="/users/login" title="Log in to Ram Overflow">Log in</a>
+        <a class = "tab" id = "signup-tab" href="/users/signup" title="Sign up to Ram Overflow">Sign up</a>
+    </div>
+  </div>
+
+  <div id="signup-login">
+    <div id = "ram-network-text">
+      Ram Overflow is part of the <img title="Ram Exchange" src="/images/logo.png"/> network of 149 Q&amp;A <a href="/">communities</a>.
+    </div>
+
+    <div id="signup-login-wrapper">
+
+      <div id="google-fb-buttons">
+        <div class="google-button">
+          <span>Google</span>
+          <br/>
+        </div>
+        <div class="facebook-button">
+         <span>Facebook</span>
+          <br/>
+        </div>
+      </div>
+
+      <div id="or-seperator"><div id="or">OR</or></div></div>
+
+ <% if @signup %>
+ <!-- SHOW IF SIGNING UP, HIDE IF LOGGING IN -->
+    <div class = "signup-specific-view">
+      <form id="signup-form" action="/users" method="POST">
+          <label for="email">Email (required, but never shown)</label><br/>
+          <input type="email" name="email" placeholder="you@example.org"/><br/>
+          <label for="password">Password</label><br/>
+          <input type="password" name="password" placeholder="********"/><br/>
+          <label for="password-confirm">Confirm password</label><br/>
+          <input type="password" name="password-confirm" placeholder="********"/><br/>
+
+        <div>
+          <h2>STACK OVERFLOW HAS A CAPTCHA CONFIRM YOU AREN'T A ROBOT IMAGE HERE</h2>
+        </div>
+         <br>
+
+        <div id="controls-row">
+          <a href ="/">more sign up options</a>
+          <input class="signup-button" type="submit" name="signup-button" value="Sign up" />
+        </div>
+      </form>
+
+
+    <div id="terms-of-service">By registering, you agree to the <a href='/'>privacy policy</a> and <a href='/'>terms of service</a>.</div>
+
+
+    <div id="switch-to-login">Already have an account? <a href="/users/login">Log in</a></div>
+  </div>
+</div>
+</div>
+<% else %>
+<!-- SHOW IF LOGGING IN, HIDE IF SIGNING UP -->
+    <div class = "login-specific-view">
+      <form id="login-form" action="/users/login" method="POST">
+          <label for="email">Email</label><br/>
+          <input type="email" name="email" placeholder="you@example.org"/><br/>
+          <label for="password">Password</label><br/>
+          <input type="password" name="password" placeholder="********"/><br/>
+
+        <div id="controls-row">
+          <a href="/">more login options</a>
+          <input class="login-button" type="submit" name="login-button" value="Log in" />
+        </div>
+      </form>
+
+    <div id="switch-to-signup">Don't have an account? <a href="/users/signup">Sign up</a></div>
+  </div>
+ </div>
+<% end %>
