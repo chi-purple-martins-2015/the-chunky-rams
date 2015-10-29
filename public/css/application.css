@@ -142,7 +142,7 @@ footer {
 #logo_navbar_question:hover {
   height: 24px;
   width: 90px;
-  background-color: #DD9E10;
+  background-color: #F69C55;
   float: right;
   margin-left: 3px;
   margin-right: 3px;
@@ -155,7 +155,7 @@ footer {
 #logo_navbar_tag:hover {
   height: 24px;
   width: 60px;
-  background-color: #DD9E10;
+  background-color: #F69C55;
   float: right;
   margin-left: 3px;
   margin-right: 3px;
@@ -167,7 +167,7 @@ footer {
 #logo_navbar_user:hover {
   height: 24px;
   width: 65px;
-  background-color: #DD9E10;
+  background-color: #F69C55;
   float: right;
   margin-left: 3px;
   margin-right: 3px;
@@ -179,7 +179,7 @@ footer {
 #logo_navbar_unanswered:hover {
   height: 24px;
   width: 110px;
-  background-color: #DD9E10;
+  background-color: #F69C55;
   float: right;
   margin-left: 3px;
   margin-right: 3px;
@@ -191,7 +191,7 @@ footer {
 #logo_navbar_ask:hover {
   height: 24px;
   width: 120px;
-  background-color: #DD9E10;
+  background-color: #F69C55;
   float: right;
   margin-left: 3px;
   margin-right: 3px;
@@ -605,35 +605,44 @@ span > img:hover {
 /* **** QUESTIONS INDEX START **** */
 
 .questions-container {
-  width: 1030px;
+  width: 80%;
   height: 4755px;
   margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 15px;
   -webkit-box-sizing: border-box;
     -mox-box-sizing: border-box;
       box-sizing: border-box;
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  /*background-color: orange;*/
 }
 
 .questions-content {
-  width: 1000px;
-  height: 4629px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   padding: 15px;
+  /*background-color: blue;*/
 }
 
 .questions-mainbar {
-  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  /*display: inline-block;*/
   float: left;
-  width: 728px;
-  height: 4629px;
+  width: 60%;
+  /*background-color: red;*/
 }
 
 .questions-mainbar-header {
   display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   float: left;
   width: 728px;
-  height: 34px;
   border-bottom: 1px;
+  /*background-color: pink;*/
 }
 
 #questions-mainbar-header-tabs {
@@ -652,31 +661,34 @@ span > img:hover {
 }
 
 .questions {
-  width: 728px;
-  height: 4629px;
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 728px;*/
   border-bottom: 20px;
 }
 
 .questions-sidebar {
-  background-color: blue;
+  /*background-color: blue;*/
   display: inline-block;
   float: right;
-  width: 220px;
-  height: 2450px;
+  /*width: 220px;*/
   margin-bottom: 15px;
 }
 
 .question-summary {
-  width: 728px;
-  height: 125.50px;
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 728px;*/
   padding-top: 12px;
   padding-bottom: 10px;
-  border-bottom: 1px solid gray;
+  /*background-color: teal;*/
 }
 
 .question-statscontainer {
-  width: 78px;
-  height: 115px;
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 78px;*/
+  /*height: 115px;*/
   display: inline-block;
   float: left;
   padding-top: 14px;
@@ -684,46 +696,48 @@ span > img:hover {
 }
 
 .question-stats {
-  width: 58px;
-  height: 87px;
+  /*width: 58px;
+  height: 87px;*/
 }
 
 .question-num-votes {
-  width: 58px;
-  height: 35px;
+  /*width: 58px;
+  height: 35px;*/
   color: gray;
 }
 
 .question-num-answers {
-  width: 58px;
-  height: 32px;
+  /*width: 58px;
+  height: 32px;*/
   padding-top: 7px;
   padding-bottom: 5px;
   margin-bottom: 8px;
-  background-color: #75845c;
+  /*background-color: #75845c;*/
   color: white;
 }
 
 .question-vote-num {
-  width: 58px;
-  height: 16px;
+  /*width: 58px;
+  height: 16px;*/
   padding-bottom: 3px;
 }
 
 .question-vote-label {
-  width: 58px;
-  height: 16px;
+  /*width: 58px;
+  height: 16px;*/
 }
 
 .question-views {
-  width: 58px;
-  height: 32px;
+  /*width: 58px;
+  height: 32px;*/
   padding-top: 4px;
   color: black;
 }
 
 .question-container {
-  width: 630px;
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 630px;*/
   height: 125.50px;
   display: inline-block;
   border: 1px solid red;
@@ -731,7 +745,7 @@ span > img:hover {
 
 #question-title {
   width: 630px;
-  height: 120px;
+  /*height: 120px;*/
   margin-bottom: 7.50px;
 }
 
@@ -747,7 +761,6 @@ span > img:hover {
 
 .question-excerpt {
   width: 630px;
-  height: 32px;
   padding-bottom: 5px;
   margin-top: -80px;
   color: #444;
@@ -755,7 +768,6 @@ span > img:hover {
 
 .question-tags > a {
   width: auto;
-  height: 12px;
   line-height: 18px;
   display: inline-block;
   float: left;
@@ -767,20 +779,20 @@ span > img:hover {
   margin-right: 1px;
   margin-bottom: 1px;
   color: #3e6d8e;
-  background-color: #e4edf4;
+  /*background-color: #e4edf4;*/
 }
 
 .question-date-author-wrapper {
   width: 185px;
-  height: 60px;
   float: right;
   color: #999;
   line-height: 18px;
 }
 
 .question-user-info {
+  margin-left: auto;
+  margin-right: auto;
   width: 190px;
-  height: 35px;
   float: right;
 }
 
@@ -810,17 +822,17 @@ span > img:hover {
 
 .gold-badge-icon {
   padding: 1px;
-  background-color: gold;
+  /*background-color: gold;*/
 }
 
 .silver-badge-icon {
   padding: 1px;
-  background-color: silver;
+  /*background-color: silver;*/
 }
 
 .bronze-badge-icon {
   padding: 1px;
-  background-color: brown;
+  /*background-color: brown;*/
 }
 
 .num-badges {
@@ -882,6 +894,62 @@ span > img:hover {
     padding: 5px 10px;
 }
 
+
+
+
+/*NEW PAGE*/
+
+
+.question_contain {
+  background-color: blue;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1500px;
+  width: 75%;
+}
+
+.question_head {
+  background-color: red;
+  width: 100%;
+  height: 50px;
+}
+
+.question_right_bar {
+  background-color: orange;
+  width: 15%;
+  height: 100%;
+  float: right;
+}
+
+.question_view {
+  width: 75%;
+  height: 175px;
+  background-color: grey;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.question_counter {
+  background-color: teal;
+  width: 12%;
+  height: 175px;
+  float: left;
+}
+
+.question_summary {
+  background-color: purple;
+  width: 100%;
+  height: 70%;
+}
+
+.question_summary_user {
+  background-color: green;
+  float: right;
+  width: 20%;
+  height: 30%;
+}
 
 .user-image-div img {
 
@@ -1090,3 +1158,4 @@ span > img:hover {
   padding: 10px;
   margin-left: 10px;
 }
+
