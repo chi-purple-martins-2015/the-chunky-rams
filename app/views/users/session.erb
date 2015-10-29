@@ -1,12 +1,12 @@
 <div id="signup-login-header">
     <div id="signup-login-header-tabs">
-        <a class = "tab" href="/users/login" title="Log in to Ram Overflow">Log in</a>
-        <a class = "tab" href="/users/signup" title="Sign up to Ram Overflow">Sign up</a>
+        <a class = "tab" id = "login-tab" href="/users/login" title="Log in to Ram Overflow">Log in</a>
+        <a class = "tab" id = "signup-tab" href="/users/signup" title="Sign up to Ram Overflow">Sign up</a>
     </div>
   </div>
 
   <div id="signup-login">
-    <div>
+    <div id = "ram-network-text">
       Ram Overflow is part of the <img title="Ram Exchange" src="/images/logo.png"/> network of 149 Q&amp;A <a href="/">communities</a>.
     </div>
 
@@ -14,16 +14,16 @@
 
       <div id="google-fb-buttons">
         <div class="google-button">
-          <div class="text"><span>Google</span></div>
+          <span>Google</span>
           <br/>
         </div>
         <div class="facebook-button">
-          <div class="text"><span>Facebook</span></div>
+         <span>Facebook</span>
           <br/>
         </div>
       </div>
 
-      <div id="or">or</div>
+      <div id="or-seperator"><div id="or">OR</or></div></div>
 
  <% if @signup %>
  <!-- SHOW IF SIGNING UP, HIDE IF LOGGING IN -->
@@ -42,7 +42,7 @@
          <br>
 
         <div id="controls-row">
-          <a>more sign up options</a>
+          <a href ="/">more sign up options</a>
           <input class="signup-button" type="submit" name="signup-button" value="Sign up" />
         </div>
       </form>
@@ -65,7 +65,7 @@
           <input type="password" name="password" placeholder="********"/><br/>
 
         <div id="controls-row">
-          <a>more login options</a>
+          <a href="/">more login options</a>
           <input class="login-button" type="submit" name="login-button" value="Log in" />
         </div>
       </form>
