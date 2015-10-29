@@ -19,7 +19,9 @@ get "/users/login" do
 end
 
 post "/users/login" do
-  @user = User.authenticate(params)
+  puts "STUFFF!"
+  p params
+  @user = User.authenticate(params[:email], params[:password])
   if @user
     set_session_variables(@user)
     redirect "/users/#{session[:id]}"
