@@ -588,8 +588,6 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 .question-statscontainer {
   width: 78px;
   height: 115px;
-  margin-left: 8px;
-  margin-right: 8px;
   display: inline-block;
   float: left;
   padding-top: 14px;
@@ -638,6 +636,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 .question-container {
   width: 630px;
   height: 125.50px;
+  display: inline-block;
   border: 1px solid red;
 }
 
@@ -664,49 +663,52 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
   margin-top: -80px;
   color: #444;
 }
-/*
 
-.indiv-question-summary {
-  float: right;
-  border: 1px solid blue;
-  width: 630px;
-  height: 146px;
-}
-
-
-
-
-/*.post-tag {
+.question-tags > a {
+  width: auto;
+  height: 12px;
+  line-height: 18px;
+  display: inline-block;
+  float: left;
+  font-size: 12px;
+  padding-bottom: 4.8px 6px;
+  border: 1px;
+  margin-top: 1px;
+  margin-left: -1px;
+  margin-right: 1px;
+  margin-bottom: 1px;
   color: #3e6d8e;
   background-color: #e4edf4;
-  font-size: 12px;
-  white-space: nowrap;
-  padding: 8px;
 }
 
-.question-datetime {
-  margin-top: 2px;
-  margin-bottom: 4px;
-}
-
-.question-user-info {
+.question-date-author-wrapper {
+  width: 185px;
+  height: 60px;
   float: right;
   color: #999;
-  width: 185px;
   line-height: 18px;
 }
 
-.post-author-details {
-  float: left;
-  margin-left: 5px;
-  width: 150px;
-  line-height: 17px;
-  white-space: nowrap;
+.question-user-info {
+  width: 190px;
+  height: 35px;
+  float: right;
 }
 
-.post-author-details a {
+.question-time {
+  width: 190px;
+  height: 18px;
+  margin-top: 2px;
+  margin-bottom: 4px;
   font-size: 12px;
-  color: #07C;
+}
+
+.question-username {
+  color: blue;
+}
+
+.question-user-pic {
+  color: blue;
 }
 
 .reputation-score {
@@ -719,14 +721,17 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 
 .gold-badge-icon {
   padding: 1px;
+  background-color: gold;
 }
 
 .silver-badge-icon {
   padding: 1px;
+  background-color: silver;
 }
 
 .bronze-badge-icon {
   padding: 1px;
+  background-color: brown;
 }
 
 .num-badges {
@@ -737,53 +742,6 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
   color: #808185;
 }
 
-
-.question-votes {
-  color: #777;
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 8px;
-}
-
-.question-score-num {
-  font-weight: normal;
-}
-
-.question-points-label {
-  font-size: 11px;
-}
-
-.question-num-answers {
-  color: black;
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 8px;
-}
-
-.num-answers-value {
-  font-weight: normal;
-}
-
-.label-num-answers {
-  font-size: 11px;
-}
-
-.question-views {
-  color: #9b764f;
-  font-size: 12px;
-  text-align: center;
-  padding-top: 5px;
-  margin-bottom: 8px;
-}
-
-.num-views {
-  font-weight: normal;
-}
-
-.label-views {
-  font-size: 11px;
-}
-*/
 /* ---- QUESTIONS INDEX END ---- */
 
 
