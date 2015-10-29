@@ -360,6 +360,7 @@ span > img:hover {
   margin-right: auto;
   margin-left: auto;
   margin-top: 90px;
+  margin-bottom: 100px;
   font-family: sans-serif;
   -webkit-box-sizing: border-box;
   -mox-box-sizing: border-box;
@@ -526,7 +527,8 @@ span > img:hover {
   border-radius: 5px;
   width: 136px;
   height: 38px;
-  padding: 12px 50px;
+  padding: 12px 5px;
+  padding-bottom: 5px;
   margin-top: 5px;
   background-color: #0077CC;
   color: white;
@@ -546,11 +548,59 @@ span > img:hover {
 }
 
 #controls-row {
-
   float: left;
+  width: 300px;
+  margin-top: 40px;
+}
+
+.logout-specific-view {
+  display: inline-block;
+  margin: 0 25%;
+}
+
+.logout-specific-view ul {
   width: 300px;
 }
 
+.logout-specific-view li {
+  list-style-type: none;
+}
+
+.logout-specific-view p {
+  font-size: 20px;
+}
+
+#logout-tab {
+  border: none;
+  font-size: 20px;
+}
+
+#logout-tab a {
+  font-size: 20px;
+}
+
+#logout-form {
+  border: 1px solid #E6E6E6;
+  width: 400px;
+  height: 250px;
+  margin: 0 auto;
+  padding: 3em;
+}
+
+
+.logout-button {
+
+  display: inline-block;
+  border-radius: 5px;
+  width: 136px;
+  height: 38px;
+  padding: 1px 5px;
+  margin-top: 5px;
+    margin-left: 50px;
+
+  background-color: #0077CC;
+  color: white;
+}
 /*Users profile nave */
 
 /* **** QUESTIONS INDEX START **** */

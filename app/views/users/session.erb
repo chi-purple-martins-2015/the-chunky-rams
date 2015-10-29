@@ -86,13 +86,19 @@
 
 <% else %>
 
-<div class = "login-specific-view">
-  <h2>Clicking "Log Out" will log you out of the following domains on this device:</h2>
-      <form id="signup-login-form" action="/users/logout" method="POST">
-          <p>placeholder for other stuff you might logout of on ramexchange network</p>
+<div class = "logout-specific-view">
+  <p>Clicking "Log Out" will log you out of the following domains on this device:</p>
+  <form id="logout-form">
+
+          <ul>
+            <li><a href="#">ramexchange.com</a></li>
+            <li><a href="#">taylorswift.com</a></li>
+            <li><a href="#">godaddy.com</a></li>
+            <li><a href="#">whereshouldigotocollege.com</a></li>
+          </ul>
         <div id="controls-row">
           <a href="/">cancel</a>
-          <input class="login-button" type="submit" name="login-button" value="Log out" />
+          <input class="logout-button" type="submit" name="login-button" value="Log out" />
         </div>
       </form>
     </div>
