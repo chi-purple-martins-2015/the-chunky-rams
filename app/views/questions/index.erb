@@ -6,12 +6,12 @@
     <div class = "questions-mainbar-header">
       <span id = "all-questions">All Questions</span>
       <div id="questions-mainbar-header-tabs">
-        <a class = "tab" id = "newest-tab" href="/questions">newest</a>
-        <a class = "tab" id = "featured-tab" href="/questions">featured</a>
-        <a class = "tab" id = "frequent-tab" href="/questions">frequent</a>
-        <a class = "tab" id = "votes-tab" href="/questions">votes</a>
-        <a class = "tab" id = "active-tab" href="/questions">active</a>
-        <a class = "tab" id = "unanswered-tab" href="/questions">unanswered</a>
+        <a class="tab" id="newest-tab" href="/questions">newest</a>
+        <a class="tab" id="featured-tab" href="/questions">featured</a>
+        <a class="tab" id="frequent-tab" href="/questions">frequent</a>
+        <a class="tab" id="votes-tab" href="/questions">votes</a>
+        <a class="tab" id="active-tab" href="/questions">active</a>
+        <a class="tab" id="unanswered-tab" href="/questions">unanswered</a>
       </div>
     </div>
 
@@ -51,7 +51,7 @@
             <div class = "question-user-info">
               <div class = "question-time">asked <%= format_time(question.created_at) %></div>
               <div class = "question-username"><%= find_username(question.user_id) %></div>
-              <div class = "question-user-pic"> <img alt = "user picture" src = "#"/></div>
+              <div class = "question-user-pic"> <img alt = "user picture" src = "<%= User.find(question.user_id).path_to_profile_image %>"/></div>
               <span class="reputation-score"><%= rand(10..4500)%></span>
           <span class="gold-badge-icon"></span>
           <span class="num-badges"><%=rand(1..100)%></span>
