@@ -743,7 +743,6 @@ span > img:hover {
 }
 
 .question-container {
-
   margin-left: auto;
   margin-right: auto;
   height: 125.50px;
@@ -1856,7 +1855,6 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 }
 
 .question_summary_user {
-  background-color: green;
   float: right;
   width: 20%;
   height: 30%;
