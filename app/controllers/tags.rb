@@ -10,7 +10,6 @@ end
 
 get '/tags/new' do
   @tags = Tag.all.order(created_at: :desc)
-
   erb :'tags/new'
 end
 
@@ -23,7 +22,10 @@ end
 
 get '/tags/name' do
   @tags = Tag.all.order(name: :asc)
-
   erb :'tags/name'
 end
 
+get '/tags/:id' do
+  @tag = Tag.find_by(id: params[:id])
+  erb :'tags/show'
+end
