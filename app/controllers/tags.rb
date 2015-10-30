@@ -14,6 +14,11 @@ get '/tags/new' do
   erb :'tags/new'
 end
 
+post '/tags/find' do
+  tag = Tag.find_by(name: params['tagname'])
+  redirect "/tags/#{tag.id}" if tag
+  redirect '/tags'
+end
 
 
 get '/tags/name' do
