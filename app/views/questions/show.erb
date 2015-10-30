@@ -14,7 +14,9 @@
   <div class="question-body">
     <p><%= @question.body %></p>
     <div class="post-user-info">
+      <p>Asked <%=rand(2..100)%> days ago</p>
       <span class="post-username"><a href="/users/<%=@question.user_id%>"><%= find_username(@question.user_id) %></a></span>
+      <img src=<%=User.find_by(id: @question.user_id).path_to_profile_image%>>
     </div>
   </div>
 
