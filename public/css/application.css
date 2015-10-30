@@ -5,16 +5,27 @@ header {
   background-color: #222;
 }
 
-body {
-}
 
-footer {
+/*footer {
   position: relative;
   bottom: 0;
   height: 200px;
   width: 100%;
   background-color: #2f2f2f;
+}*/
+
+footer {
+  position: relative;
+  bottom: 0;
+  /*top: 1140em;*/
+  /*height: 200px;*/
+  width: 100%;
+  background-color: #1F1E1E;
+  /*position: relative;*/
+  /*top: 2500px;*/
 }
+
+
 
 .top_bar {
   display: block;
@@ -903,9 +914,6 @@ header {
   background-color: #1F1E1E;
 }
 
-body {
-  height: 2000px;
-}
 
 
 .top_bar {
@@ -1224,15 +1232,6 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
     color: black;
 
 }
-
-/** {
-  background-color: #FFFFFF;
-  -webkit-box-sizing: border-box;
-  -mox-box-sizing: border-box;
-  box-sizing: border-box;
-
-  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-}*/
 
 /*LOGIN AND SIGNUP PAGE*/
 
@@ -1678,6 +1677,18 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
   font-size: 14px;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 30px;
+}
+
+.question-tags-container {
+  width: 30%;
+  height: 50px;
+  margin-top: 50px;
+  float: left;
+  /*background-color: lightgreen;*/
+}
+
+.question-tags-container a {
+  color: #3e6d8e;
 }
 
 .post-user-info {
