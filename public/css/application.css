@@ -914,16 +914,6 @@ header {
   background-color: #1F1E1E;
 }
 
-
-
-.top_bar {
-  display: block;
-  height: 34px;
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .search_bar {
   float: right;
   width: 188px;
