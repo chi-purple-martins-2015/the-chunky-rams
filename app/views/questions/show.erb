@@ -44,7 +44,8 @@
     <div class="individual-answer">
       <p><%= answer.body %></p>
       <div class="post-user-info">
-        <span class="post-username"><a href="/users/<%=answer.user_id%>"><%= find_username(answer.user_id) %></a></span>
+        <span class="post-username"><a href="/users/<%=answer.user_id%>"><%= find_username(answer.user_id) %></a></span><img src=<%=User.find_by(id: answer.user_id).path_to_profile_image%>>
+        <p>Answered <%=rand(2..59)%> minutes ago</p>
       </div>
     </div>
   </div>
