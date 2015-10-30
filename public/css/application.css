@@ -696,44 +696,30 @@ span > img:hover {
 
 .question-statscontainer {
   margin-top: 20px;
-<<<<<<< HEAD
 
-  margin-right: fixed;
-  width: 300px;
-  display: block;
-  position: absolute;
-  left: 10px;
-=======
   margin-left: auto;
   margin-right: auto;
   /*width: 78px;*/
   /*height: 115px;*/
   display: inline-block;
   float: left;
->>>>>>> master
   padding-top: 14px;
   padding-bottom: 14px;
 }
 
 
 .question-num-votes {
-<<<<<<< HEAD
+
   display: inline-block;
   width: 50px;
-=======
-  /*width: 58px;
-  height: 35px;*/
->>>>>>> master
+
   color: gray;
 }
 
 .question-num-answers {
-<<<<<<< HEAD
+
   width: 50px;
-=======
-  /*width: 58px;
-  height: 32px;*/
->>>>>>> master
+
   padding-top: 7px;
   padding-bottom: 5px;
   margin-bottom: 8px;
@@ -743,33 +729,22 @@ span > img:hover {
 }
 
 .question-vote-num {
-<<<<<<< HEAD
+
   width: 50px;
-=======
-  /*width: 58px;
-  height: 16px;*/
->>>>>>> master
+
   padding-bottom: 3px;
   display: inline-block;
 }
 
 .question-vote-label {
-<<<<<<< HEAD
+
   width: 50px;
   display: inline-block;
 }
 
 .question-views {
   width: 50 px;
-=======
-  /*width: 58px;
-  height: 16px;*/
-}
 
-.question-views {
-  /*width: 58px;
-  height: 32px;*/
->>>>>>> master
   padding-top: 4px;
   color: black;
   display: inline-block;
@@ -1256,17 +1231,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 
 }
 
-<<<<<<< HEAD
-/** {
-  background-color: #FFFFFF;
-  -webkit-box-sizing: border-box;
-  -mox-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-}*/
 
-=======
->>>>>>> master
 /*LOGIN AND SIGNUP PAGE*/
 
 .login-signup-container {
@@ -1448,14 +1413,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
   width: 830px;
   margin-top: 230px;
   margin-bottom: 20px;
-<<<<<<< HEAD
 
-
-
-=======
-  /*background-color: #FFFFFF;*/
-  background-color: green;
->>>>>>> master
   font-family: sans-serif;
   -webkit-box-sizing: border-box;
     -mox-box-sizing: border-box;
