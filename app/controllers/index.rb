@@ -1,3 +1,4 @@
 get "/" do
-  erb :index_2
+  @questions = Question.limit(10)
+  erb :'questions/index'
 end
