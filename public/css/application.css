@@ -600,7 +600,6 @@ span > img:hover {
   background-color: #0077CC;
   color: white;
 }
-/*Users profile nave */
 
 /* **** QUESTIONS INDEX START **** */
 
@@ -663,7 +662,7 @@ span > img:hover {
 .questions {
   margin-left: auto;
   margin-right: auto;
-  /*width: 728px;*/
+  width: 728px;
   border-bottom: 20px;
 }
 
@@ -671,14 +670,14 @@ span > img:hover {
   /*background-color: blue;*/
   display: inline-block;
   float: right;
-  /*width: 220px;*/
+  width: 220px;
   margin-bottom: 15px;
 }
 
 .question-summary {
   margin-left: auto;
   margin-right: auto;
-  /*width: 728px;*/
+  width: 728px;
   padding-top: 12px;
   padding-bottom: 10px;
   /*background-color: teal;*/
@@ -687,8 +686,7 @@ span > img:hover {
 .question-statscontainer {
   margin-left: auto;
   margin-right: auto;
-  /*width: 78px;*/
-  /*height: 115px;*/
+  width: 78px;
   display: inline-block;
   float: left;
   padding-top: 14px;
@@ -696,19 +694,16 @@ span > img:hover {
 }
 
 .question-stats {
-  /*width: 58px;
-  height: 87px;*/
+  width: 58px;
 }
 
 .question-num-votes {
-  /*width: 58px;
-  height: 35px;*/
+  width: 58px;
   color: gray;
 }
 
 .question-num-answers {
-  /*width: 58px;
-  height: 32px;*/
+  width: 58px;
   padding-top: 7px;
   padding-bottom: 5px;
   margin-bottom: 8px;
@@ -717,19 +712,16 @@ span > img:hover {
 }
 
 .question-vote-num {
-  /*width: 58px;
-  height: 16px;*/
+  width: 58px;
   padding-bottom: 3px;
 }
 
 .question-vote-label {
-  /*width: 58px;
-  height: 16px;*/
+  width: 58px;
 }
 
 .question-views {
-  /*width: 58px;
-  height: 32px;*/
+  width: 58px;
   padding-top: 4px;
   color: black;
 }
@@ -737,14 +729,13 @@ span > img:hover {
 .question-container {
   margin-left: auto;
   margin-right: auto;
-  /*width: 630px;*/
+  width: 630px;
   height: 125.50px;
   display: inline-block;
 }
 
 #question-title {
   width: 630px;
-  /*height: 120px;*/
   margin-bottom: 7.50px;
 }
 
@@ -1425,7 +1416,6 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
   margin-top: 230px;
   margin-bottom: 20px;
   /*background-color: #FFFFFF;*/
-  background-color: green;
   font-family: sans-serif;
   -webkit-box-sizing: border-box;
     -mox-box-sizing: border-box;
