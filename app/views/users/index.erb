@@ -27,9 +27,12 @@
           <li><a href="/users">reputation</a></li>
         <% end %>
     </ul>
-
-
-
+<div>
+<form id= 'user-search' method='post' action='/user/find'>
+          <label>Type to find users:</label>
+          <input type='text' name='username'>
+        </form>
+</div>
 
       <div class="small-links">
         <a href='/users'>week</a> <a href='/users'>month</a> <a href='/users'>quarter</a> <a href='/users'>year</a> <a href='/users'>all</a>
