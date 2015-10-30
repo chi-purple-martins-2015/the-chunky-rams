@@ -9,3 +9,9 @@ get "/answers/:id/votes/:vote_type" do
   answer.votes.create(user_id: user_id, votable_type: "Answer", votable_id: answer.id, vote_value: vote_value)
   redirect "/questions/#{answer.question_id}"
 end
+
+post "/questions/:id/answers" do
+  question = Question.find_by(id: params[:id])
+  question.answers.create(user_id: session[:id], body: params[:answer_body])
+  redirect "/questions/#{params[:id]}"
+end

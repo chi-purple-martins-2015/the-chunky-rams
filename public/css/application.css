@@ -907,16 +907,6 @@ body {
   height: 2000px;
 }
 
-footer {
-  position: relative;
-  bottom: 0;
-  top: 1140em;
-  height: 200px;
-  width: 100%;
-  background-color: #1F1E1E;
-  position: relative;
-  top: 2500px;
-}
 
 .top_bar {
   display: block;
@@ -1755,6 +1745,8 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 
 .individual-answer {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   min-height: 150px;
   padding-top: 5px;
   /*background-color: lightgreen;*/
@@ -1812,7 +1804,6 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 }
 
 /* **** QUESTION SHOW END **** */
-=======
 
 
 /*NEW PAGE*/
