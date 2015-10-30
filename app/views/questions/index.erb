@@ -1,3 +1,4 @@
+
 <div class = "questions-container">
   <div class = "questions-content">
 
@@ -52,13 +53,7 @@
               <div class = "question-time">asked <%= format_time(question.created_at) %></div>
               <div class = "question-username"><%= find_username(question.user_id) %></div>
               <div class = "question-user-pic"> <img alt = "user picture" src = "<%= User.find(question.user_id).path_to_profile_image %>"/></div>
-              <span class="reputation-score"><%= rand(10..4500)%></span>
-          <span class="gold-badge-icon"></span>
-          <span class="num-badges"><%=rand(1..100)%></span>
-          <span class="silver-badge-icon"></span>
-          <span class="num-badges"><%=rand(1..100)%></span>
-          <span class="bronze-badge-icon"></span>
-          <span class="num-badges"><%=rand(1..100)%></span>
+
             </div>
           </div>
 
@@ -67,15 +62,10 @@
       </div>
       <% end %>
     </div>
-<!-- below tab closes questions mainbar. don't delete it. -->
+<!-- below tab closes questions mainbar. don't delete it.
     </div>
 
 
-
-
-  <div class = "questions-sidebar">
-    <p>Awesome sidebar junk here</p>
-  </div>
-
   </div>
 </div>
+ -->
