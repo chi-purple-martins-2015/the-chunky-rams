@@ -1606,11 +1606,12 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 
 .user-tabs li a {
     color: #666;
-    /*font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;*/
     text-decoration: none;
     font-size: 13px;
 }
 .user-tabs li.active {
+
+    position: relative;
     border: 1px solid #ccc;
     border-top: 2px solid #f69c55;
     margin-bottom: -1px;
@@ -1811,7 +1812,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 }
 
 /* **** QUESTION SHOW END **** */
-=======
+
 
 
 /*NEW PAGE*/
@@ -1975,7 +1976,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
   font-size: 20px;
   font-weight: 20px;
   position: relative;
-  right: 1.5em;
+  right: -1.5em;
   top:-2em;
 }
 
@@ -2075,3 +2076,146 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
   padding: 10px;
   margin-left: 10px;
 }
+
+
+
+.user-top-nav {
+
+  max-width: 900px;
+  border-top: thin solid gray;
+  margin: auto;
+
+  height: 900px;
+}
+
+.user-tabs {
+    float: left;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 16px;
+    list-style: none;
+}
+
+.user-tabs li {
+    float: left;
+    padding: 10px 15px;
+    height: 20px;
+    line-height: 30px;
+}
+
+.user-tabs li a {
+    color: #666;
+    font-family: Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+}
+.user-tabs li.active {
+    border: 1px solid #ccc;
+    border-top: 2px solid #f69c55;
+    margin-bottom: -1px;
+    height: 28px;
+    padding: 5px 10px;
+}
+
+.user-blurb a:link {
+  color: #0000EE;
+}
+
+.user-blurb a:visited {
+  color: #551A8B;
+}
+
+.thumbnail {
+  width: 26px;
+  position: relative;
+  left: 0;
+  top: 0;
+  display: inline-block;
+}
+
+.user-blurb {
+  color: grey;
+  width: 200px;
+  margin-right: 0px;
+  margin-left: 0px;
+  font-size: 80%;
+  position: relative;
+  padding-left: 19px;
+  line-height: 0;
+  left: 110;
+  top: 0;
+  display: inline-block;
+}
+
+
+.user-blurb a:link {
+  text-decoration: none;
+  color: grey;
+}
+
+.user-blue-link a:link {
+  text-decoration: none;
+  color: blue;
+}
+
+.user-blurb a:visited {
+  color: grey;
+}
+
+.user-div {
+  padding-left: 20px;
+  display: inline-block;
+}
+
+.user-list {
+  padding-left: 15%;
+  padding-right: 15%;
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+}
+
+.user-container {
+  margin-top: 75px;
+}
+
+.user-tabs {
+    float: right;
+    width: 100%;
+    margin-bottom: 16px;
+    list-style: none;
+}
+
+.user-tabs li {
+    float: right;
+    padding: 10px 15px;
+    height: 20px;
+    line-height: 30px;
+}
+
+.user-page-description {
+    padding-left: 15%;
+    margin-left: 15%;
+    clear: both;
+    font-size: 14px;
+    margin: 10px 0;
+    line-height: 18px;
+}
+.user-page-description div {
+
+  display: inline-block;
+}
+.small-links {
+  position: relative;
+  right: 5em;
+  float: right;
+  /*border: solid thin gray;*/
+  padding: 1em;
+}
+
+.small-links a {
+  text-decoration: none;
+  padding: .5em;
+  color: gray
+}
+
