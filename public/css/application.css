@@ -4,16 +4,27 @@ header {
   background-color: #222;
 }
 
-body {
-}
 
-footer {
+/*footer {
   position: relative;
   bottom: 0;
   height: 200px;
   width: 100%;
   background-color: #2f2f2f;
+}*/
+
+footer {
+  position: relative;
+  bottom: 0;
+  /*top: 1140em;*/
+  /*height: 200px;*/
+  width: 100%;
+  background-color: #1F1E1E;
+  /*position: relative;*/
+  /*top: 2500px;*/
 }
+
+
 
 .top_bar {
   display: block;
@@ -599,6 +610,7 @@ span > img:hover {
   background-color: #0077CC;
   color: white;
 }
+/*Users profile nave */
 
 /* **** QUESTIONS INDEX START **** */
 
@@ -661,7 +673,7 @@ span > img:hover {
 .questions {
   margin-left: auto;
   margin-right: auto;
-  width: 728px;
+  /*width: 728px;*/
   border-bottom: 20px;
 }
 
@@ -669,14 +681,14 @@ span > img:hover {
   /*background-color: blue;*/
   display: inline-block;
   float: right;
-  width: 220px;
+  /*width: 220px;*/
   margin-bottom: 15px;
 }
 
 .question-summary {
 
   margin-right: auto;
-  width: 728px;
+  /*width: 728px;*/
   padding-top: 12px;
   padding-bottom: 10px;
   /*background-color: teal;*/
@@ -684,27 +696,44 @@ span > img:hover {
 
 .question-statscontainer {
   margin-top: 20px;
+<<<<<<< HEAD
 
   margin-right: fixed;
   width: 300px;
   display: block;
   position: absolute;
   left: 10px;
+=======
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 78px;*/
+  /*height: 115px;*/
+  display: inline-block;
+  float: left;
+>>>>>>> master
   padding-top: 14px;
   padding-bottom: 14px;
 }
 
-.question-stats {
-}
 
 .question-num-votes {
+<<<<<<< HEAD
   display: inline-block;
   width: 50px;
+=======
+  /*width: 58px;
+  height: 35px;*/
+>>>>>>> master
   color: gray;
 }
 
 .question-num-answers {
+<<<<<<< HEAD
   width: 50px;
+=======
+  /*width: 58px;
+  height: 32px;*/
+>>>>>>> master
   padding-top: 7px;
   padding-bottom: 5px;
   margin-bottom: 8px;
@@ -714,35 +743,49 @@ span > img:hover {
 }
 
 .question-vote-num {
+<<<<<<< HEAD
   width: 50px;
+=======
+  /*width: 58px;
+  height: 16px;*/
+>>>>>>> master
   padding-bottom: 3px;
   display: inline-block;
 }
 
 .question-vote-label {
+<<<<<<< HEAD
   width: 50px;
   display: inline-block;
 }
 
 .question-views {
   width: 50 px;
+=======
+  /*width: 58px;
+  height: 16px;*/
+}
+
+.question-views {
+  /*width: 58px;
+  height: 32px;*/
+>>>>>>> master
   padding-top: 4px;
   color: black;
   display: inline-block;
 }
 
 .question-container {
-
   margin-left: auto;
   margin-right: auto;
-/*  width: 630px;
-*/  height: 125.50px;
+  height: 125.50px;
   display: inline-block;
   margin-top: -200px;
 }
 
 #question-title {
   width: 630px;
+  /*height: 120px;*/
   margin-bottom: 7.50px;
 }
 
@@ -902,29 +945,6 @@ header {
   height: 34px;
   width: 100%;
   background-color: #1F1E1E;
-}
-
-body {
-  height: 2000px;
-}
-
-footer {
-  position: relative;
-  bottom: 0;
-  top: 1140em;
-  height: 200px;
-  width: 100%;
-  background-color: #1F1E1E;
-  position: relative;
-  top: 2500px;
-}
-
-.top_bar {
-  display: block;
-  height: 34px;
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .search_bar {
@@ -1236,6 +1256,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 
 }
 
+<<<<<<< HEAD
 /** {
   background-color: #FFFFFF;
   -webkit-box-sizing: border-box;
@@ -1244,6 +1265,8 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }*/
 
+=======
+>>>>>>> master
 /*LOGIN AND SIGNUP PAGE*/
 
 .login-signup-container {
@@ -1425,9 +1448,14 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
   width: 830px;
   margin-top: 230px;
   margin-bottom: 20px;
+<<<<<<< HEAD
 
 
 
+=======
+  /*background-color: #FFFFFF;*/
+  background-color: green;
+>>>>>>> master
   font-family: sans-serif;
   -webkit-box-sizing: border-box;
     -mox-box-sizing: border-box;
@@ -1608,12 +1636,11 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 
 .user-tabs li a {
     color: #666;
+    /*font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;*/
     text-decoration: none;
     font-size: 13px;
 }
 .user-tabs li.active {
-
-    position: relative;
     border: 1px solid #ccc;
     border-top: 2px solid #f69c55;
     margin-bottom: -1px;
@@ -1692,6 +1719,18 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
   margin-bottom: 30px;
 }
 
+.question-tags-container {
+  width: 30%;
+  height: 50px;
+  margin-top: 50px;
+  float: left;
+  /*background-color: lightgreen;*/
+}
+
+.question-tags-container a {
+  color: #3e6d8e;
+}
+
 .post-user-info {
   float: right;
   margin-right: 200px;
@@ -1758,6 +1797,8 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 
 .individual-answer {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   min-height: 150px;
   padding-top: 5px;
   /*background-color: lightgreen;*/
@@ -1817,7 +1858,6 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 /* **** QUESTION SHOW END **** */
 
 
-
 /*NEW PAGE*/
 
 
@@ -1866,7 +1906,6 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
 }
 
 .question_summary_user {
-  background-color: green;
   float: right;
   width: 20%;
   height: 30%;
@@ -1979,7 +2018,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
   font-size: 20px;
   font-weight: 20px;
   position: relative;
-  right: -1.5em;
+  right: 1.5em;
   top:-2em;
 }
 
@@ -2079,8 +2118,6 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
   padding: 10px;
   margin-left: 10px;
 }
-
-
 
 .user-top-nav {
 

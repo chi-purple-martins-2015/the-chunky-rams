@@ -13,6 +13,11 @@
 
   <div class="question-body">
     <p><%= @question.body %></p>
+    <div class="question-tags-container">
+      <% @question.tags.each do |tag| %>
+        <span class="tag-name"><a href="/tags/<%=tag.name%>"><%= tag.name %></a></span>
+      <% end %>
+    </div>
     <div class="post-user-info">
       <p>Asked <%=rand(2..100)%> days ago</p>
       <span class="post-username"><a href="/users/<%=@question.user_id%>"><%= find_username(@question.user_id) %></a></span>
@@ -66,11 +71,11 @@
       <h2>Your Answer</h2>
       <% if logged_in? %>
       <div id="post-editor">
-        <textarea id="answer-input" cols="80" rows="12" tabindex="101"></textarea>
+        <textarea id="answer-input" cols="80" rows="12" tabindex="101" name="answer_body"></textarea>
       </div>
       <input type="submit" value="Post Your Answer" class="button">
       <% else %>
-      <p class="foot-links"><a href="/users/login">Log in</a> or <a href="/users/new">sign up</a> to add your answer.</p>
+      <p class="foot-links"><a href="/users/login">Log in</a> or <a href="/users/signup">sign up</a> to add your answer.</p>
       <% end %>
   </div>
 </div>
